@@ -1,0 +1,12 @@
+.NavBar {
+  background-color: blanchedalmond;
+  border: 1px solid red;
+  padding: 0.5rem 0;
+}
+
+.NavBar .nav-section {
+  background-color: blueviolet;
+  color: white;
+  margin: 1rem;
+  padding: 0.5rem 0;
+}
