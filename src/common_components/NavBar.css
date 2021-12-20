@@ -1,38 +1,59 @@
+.NavBar .nav-section {
+  border-bottom: 1px solid rgb(226, 226, 226);
+}
+
 .NavBar .nav-sec-1 {
-  border-bottom: 1px solid rgb(128, 128, 128);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding-right: 1rem;
 }
 
-.NavBar .logo-col {
-  text-align: left;
-  padding: 0;
+.NavBar .brand-box {
+  display: flex;
+  flex-direction: row;
+  max-height: 100%;
+  background-color: #e7000a;
 }
 
-.NavBar .logo-col img {
-  width: 10rem;
-  height: auto;
+.NavBar .brand-box img {
+  height: 55px;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
-.NavBar .search-col {
-  align-self: center;
-  text-align: left;
-  padding: 0;
-  border: 0;
-  border-bottom: 1px solid rgb(0, 0, 0);
+.NavBar .search-box {
+  flex: 1;
+  display: flex;
+  align-self: stretch;
+  justify-content: flex-start;
+  margin-right: 1.5rem;
+  margin-left: 2rem;
 }
 
-.NavBar .search-col:hover {
+.NavBar .search-box-content {
+  display: flex;
+  align-items: center;
+  height: 80%;
+  border-bottom: 1px solid #000;
+}
+
+.NavBar .search-box-content:hover {
   border-bottom: 1px solid rgb(255, 0, 0);
 }
 
 .NavBar .searchlabel {
   font-size: 1rem;
+  margin: 0;
   margin-right: 0.5rem;
 }
 
 .NavBar .searchfield {
   border: 0;
   padding: 0;
-  width: calc(100% - 2rem);
+  width: 100%;
 }
 
 .NavBar .searchfield:focus {
@@ -41,4 +62,36 @@
 
 .NavBar .searchfield::placeholder {
   pointer-events: none;
+  font-size: 0.9rem;
+}
+
+.NavBar .my-nav-btn {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 0.9rem;
+  align-self: stretch;
+}
+
+.NavBar .nav-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.NavBar .nav-sec-2 {
+  height: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+.NavBar .nav-sec-2-content {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  gap: 1.5rem;
 }
