@@ -1,4 +1,29 @@
 .WebRoadmap {
-  background-color: rgb(182, 182, 182);
-  min-height: 10vh;
+  background: linear-gradient(to top, #e7e7e7 0, #f9f9f9 75%);
+  padding: 2rem 4rem;
+  font-size: 0.9rem;
+}
+
+.WebRoadmap .linkgroup-container {
+  text-align: left;
+}
+
+.WebRoadmap .linkgroup-title {
+  font-weight: 600;
+}
+
+.WebRoadmap .grouped-links {
+  font-size: 0.8rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6rem;
+}
+
+.WebRoadmap .roadmap-link {
+  color: rgb(95, 95, 95);
+}
+
+.WebRoadmap .roadmap-link:hover {
+  color: #000;
 }

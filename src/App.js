@@ -11,8 +11,8 @@ import { HolidayPage } from "./pages/HolidayPage";
 
 function App() {
   return (
-    <div className="App">
-      <Router>
+    <Router>
+      <div className="App">
         <NavBar />
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -21,11 +21,10 @@ function App() {
           <Route path="/whatsnew" element={<NewsPage />} />
           <Route path="/holiday" element={<HolidayPage />} />
         </Routes>
-      </Router>
-
-      <WebRoadmap />
-      <Footer />
-    </div>
+        <WebRoadmap />
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
