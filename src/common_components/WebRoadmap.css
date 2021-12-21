@@ -27,3 +27,13 @@
 .WebRoadmap .roadmap-link:hover {
   color: #000;
 }
+
+.WebRoadmap .region-changer {
+  color: #000;
+}
+
+.WebRoadmap .region-icon {
+  width: 1.5rem;
+  height: auto;
+  margin-left: 0.5rem;
+}

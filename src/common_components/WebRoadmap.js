@@ -144,6 +144,39 @@ export const WebRoadmap = () => {
           </div>
         </div>
       </div>
+      <div className="container-fluid">
+        <div className="row justify-content-end">
+          <div className="col-2 linkgroup-container">
+            <p className="linkgroup-title">Legal</p>
+            <ul className="grouped-links">
+              <li>
+                <Link to="/" className="roadmap-link">
+                  Documents and Policies
+                </Link>
+              </li>
+              <li>
+                <Link to="/" className="roadmap-link">
+                  Terms of Use
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-2 linkgroup-container">
+            <Link to="/" className="linkgroup-title region-changer">
+              Change region
+            </Link>
+            <img
+              className="region-icon"
+              src={require("../media/lang-us.png")}
+              alt="region"
+            ></img>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
