@@ -1,13 +1,14 @@
 import React from "react";
 import "./NavBar.css";
 import { Link } from "react-router-dom";
+import BrandLogo from "../media/landscape-logo.png";
 
 export const NavBar = () => {
   return (
     <div className="NavBar">
       <div className="nav-section nav-sec-1">
         <div className="brand-box">
-          <img src={require("../media/landscape-logo.png")} alt="brand" />
+          <img src={BrandLogo} alt="brand" />
         </div>
         <div className="search-box">
           <div className="search-box-content">

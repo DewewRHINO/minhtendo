@@ -1,14 +1,12 @@
 import React from "react";
 import "./CenterStage.css";
+import BigBrainAcademy from "../../media/BigBrainAcademy-BrainvsBrain_v01.avif";
 
 export const CenterStage = () => {
   return (
     <div className="CenterStage">
       <div className="cstage-img-container">
-        <img
-          src={require("../../media/BigBrainAcademy-BrainvsBrain_v01.avif")}
-          alt="center stage"
-        />
+        <img src={BigBrainAcademy} alt="center stage" />
       </div>
       <div className="cstage-tail">
         <span className="avai-now">Available Now</span>

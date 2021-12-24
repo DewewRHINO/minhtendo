@@ -2,6 +2,8 @@ import React from "react";
 import "./HomePage.css";
 import { CenterStage } from "../components/homepage/CenterStage";
 import { CTABlade } from "../components/homepage/CTABlade";
+import SwitchShadow from "../media/Game_Store_Switch_Games.png";
+import HolidayGiftsImage from "../media/HGG_CTAminiblade.avif";
 
 export const HomePage = () => {
   return (
@@ -9,14 +11,22 @@ export const HomePage = () => {
       <CenterStage />
       <hr className="section-separator" />
       <CTABlade
-        imgUrl={"../../media/Game_Store_Switch_Games.png"}
+        imgUrl={SwitchShadow}
         imgAlt={"CTA Graphic"}
         bladeDesc={"Game Store: Buy, download, and play right away!"}
         buttonText={"Shop games"}
         buttonUrl={"/"}
       />
       <hr className="section-separator" />
-      <CTABlade />
+      <CTABlade
+        imgUrl={HolidayGiftsImage}
+        imgAlt={"CTA Graphic"}
+        bladeDesc={
+          "Holiday Gift Guide: Spark a smile with the perfect present."
+        }
+        buttonText={"Find gifts"}
+        buttonUrl={"/"}
+      />
     </div>
   );
 };

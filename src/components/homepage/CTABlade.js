@@ -11,11 +11,7 @@ export const CTABlade = ({
   return (
     <div className="CTABlade">
       <div className="blade-img-container">
-        <img
-          className="blade-img"
-          src={require("../../media/Game_Store_Switch_Games.png")}
-          alt={imgAlt}
-        />
+        <img className="blade-img" src={imgUrl} alt={imgAlt} />
       </div>
       <div className="blade-elements">
         <div className="blade-text-container">
