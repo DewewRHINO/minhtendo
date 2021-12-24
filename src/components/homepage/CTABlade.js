@@ -23,7 +23,7 @@ export const CTABlade = ({
           <p className="blade-text">{bladeDesc}</p>
         </div>
         <div className="cta-btn-container">
-          <span className="cta-btn">{buttonText + " >"}</span>
+          <span className="action-button cta-btn">{buttonText + " >"}</span>
         </div>
       </div>
     </div>

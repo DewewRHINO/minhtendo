@@ -10,7 +10,7 @@ export const CenterStage = () => {
       </div>
       <div className="cstage-tail">
         <span className="avai-now">Available Now</span>
-        <span className="learn-more">Learn more {">"}</span>
+        <span className="action-button learn-more">Learn more {">"}</span>
         <div className="age-badge-container">
           <img
             className="age-badge"

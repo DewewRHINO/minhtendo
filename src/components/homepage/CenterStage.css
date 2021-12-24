@@ -28,14 +28,10 @@
 }
 
 .CenterStage .learn-more {
-  padding: 0.75rem 1.5rem;
   background-color: #e60012;
   color: #fff;
-  border-radius: 0.3rem;
-  font-weight: 600;
 }
 .CenterStage .learn-more:hover {
-  cursor: pointer;
   background-color: #ac000d;
 }
 

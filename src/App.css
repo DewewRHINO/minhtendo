@@ -2,3 +2,15 @@
   text-align: center;
   color: #484848;
 }
+
+.App .action-button {
+  padding: 1rem 1.2rem;
+  border-radius: 0.4rem;
+  white-space: nowrap;
+  word-wrap: break-word;
+  font-size: 1.2rem;
+  font-weight: 650;
+}
+.App .action-button:hover {
+  cursor: pointer;
+}
