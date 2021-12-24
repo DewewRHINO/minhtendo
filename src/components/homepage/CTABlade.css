@@ -1,0 +1,67 @@
+.CTABlade {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem 2rem;
+  max-width: 75%;
+  height: 12rem;
+  background-color: #d80010;
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.CTABlade .blade-img-container {
+  height: 100%;
+  min-height: 100%;
+  min-width: 200px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.CTABlade .blade-img {
+  min-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.CTABlade .blade-elements {
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.CTABlade .blade-text-container {
+  padding: 2rem;
+  text-align: left;
+}
+
+.CTABlade .blade-text {
+  font-size: 2rem;
+}
+
+.CTABlade .cta-btn-container {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.CTABlade .cta-btn {
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0.3rem;
+  white-space: nowrap;
+  word-wrap: break-word;
+  font-size: 1.2rem;
+}
+.CTABlade .cta-btn:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.7);
+}

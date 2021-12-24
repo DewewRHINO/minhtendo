@@ -1,0 +1,6 @@
+.HomePage .section-separator {
+  /* border: none; */
+  height: 0.15rem;
+  max-width: 75%;
+  margin: 5rem auto;
+}
