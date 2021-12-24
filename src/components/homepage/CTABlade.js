@@ -25,7 +25,9 @@ export const CTABlade = ({
       </div>
       <div className="blade-elements">
         <div className="blade-text-container">
-          <p className="blade-text">{bladeDesc || ""}</p>
+          <p className="blade-text">
+            {bladeDesc || "Nintendo is loved by every age group of gamers!"}
+          </p>
         </div>
         <div className="cta-btn-container">
           <span className="action-button cta-btn">
