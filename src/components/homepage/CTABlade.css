@@ -1,18 +1,22 @@
 .CTABlade {
+  /* default theme, can be changed with passed data */
+  background-color: #d80010;
+  color: #fff;
+  /* ----- */
   margin-left: auto;
   margin-right: auto;
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding: 0.5rem 2rem;
-  max-width: 75%;
-  height: 12rem;
-  background-color: #d80010;
-  color: #fff;
+  width: 1300px;
+  max-width: 95%;
+  height: auto;
   font-weight: 600;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .CTABlade .blade-img-container {
@@ -21,12 +25,13 @@
   min-width: 200px;
   max-width: 100%;
   max-height: 100%;
+  padding: 1rem;
 }
 
 .CTABlade .blade-img {
   min-height: 100%;
   max-width: 100%;
-  max-height: 100%;
+  max-height: 200px;
   object-fit: contain;
 }
 

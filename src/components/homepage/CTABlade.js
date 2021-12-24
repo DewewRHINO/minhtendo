@@ -7,9 +7,14 @@ export const CTABlade = ({
   bladeDesc,
   buttonText,
   buttonUrl,
+  bladeBgColor,
+  bladeTextColor,
 }) => {
   return (
-    <div className="CTABlade">
+    <div
+      className="CTABlade"
+      style={{ backgroundColor: bladeBgColor, color: bladeTextColor }}
+    >
       <div className="blade-img-container">
         <img className="blade-img" src={imgUrl} alt={imgAlt} />
       </div>

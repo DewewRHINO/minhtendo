@@ -26,6 +26,7 @@ export const HomePage = () => {
         }
         buttonText={"Find gifts"}
         buttonUrl={"/"}
+        bladeBgColor={"#5C0201"}
       />
     </div>
   );
