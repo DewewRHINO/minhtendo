@@ -1,0 +1,48 @@
+.AdGraphic {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  max-width: 95%;
+}
+
+.AdGraphic .heading {
+  text-align: left;
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  margin: 0 0 1.5rem 0;
+}
+
+.AdGraphic .img-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.AdGraphic .img-container img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.AdGraphic .action-box {
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.AdGraphic .action-text {
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-align: left;
+  margin-right: 1rem;
+}
+
+.AdGraphic .red-btn {
+  background-color: #e60012;
+  color: #fff;
+}
+
+.AdGraphic .red-btn:hover {
+  background-color: #ac000d;
+}

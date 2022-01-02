@@ -4,6 +4,7 @@ import { CenterStage } from "../components/homepage/CenterStage";
 import { CTABlade } from "../components/homepage/CTABlade";
 import SwitchShadow from "../media/Game_Store_Switch_Games.png";
 import HolidayGiftsImage from "../media/HGG_CTAminiblade.avif";
+import { AdGraphic } from "../components/homepage/AdGraphic";
 
 export const HomePage = () => {
   return (
@@ -17,6 +18,8 @@ export const HomePage = () => {
         buttonText={"Shop games"}
         buttonUrl={"/"}
       />
+      <hr className="section-separator" />
+      <AdGraphic />
       <hr className="section-separator" />
       <CTABlade
         imgUrl={HolidayGiftsImage}
