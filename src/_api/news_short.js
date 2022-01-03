@@ -28,7 +28,7 @@ const news_short = [
       "Fortnite Chapter 3 Season 1 launched earlier this month and things have flipped…literally. The island from Chapter 2 had been turned upside down, meaning there’s a ton of new locations and surprises to discover.",
     postImg:
       "https://assets.nintendo.com/image/upload/f_auto,q_auto/ncom/en_US/articles/2021/fortnite-winterfest-2021/1920x1080_Ncom?v=2022010118",
-    postImgAlt: "Spider Man No Way Home Outfits",
+    postImgAlt: "Spider Man No Way Home Merch",
   },
   {
     id: 3,
