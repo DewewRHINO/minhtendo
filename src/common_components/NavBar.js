@@ -8,7 +8,9 @@ export const NavBar = () => {
     <div className="NavBar">
       <div className="nav-section nav-sec-1">
         <div className="brand-box">
-          <img src={BrandLogo} alt="brand" />
+          <Link to="">
+            <img src={BrandLogo} alt="brand" />
+          </Link>
         </div>
         <div className="search-box">
           <div className="search-box-content">

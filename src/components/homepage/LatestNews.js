@@ -1,6 +1,7 @@
 import React from "react";
 import "./LatestNews.css";
 import { toMMDDYY } from "../../util/conversions";
+import { Link } from "react-router-dom";
 
 export const LatestNews = ({ data }) => {
   const allNews = [...data];
@@ -22,9 +23,11 @@ export const LatestNews = ({ data }) => {
       <div className="big-size-news">
         {mostRecentNews.map((news) => (
           <div className="news-card" key={news.id}>
-            <div className="card-img-container">
-              <img src={news.postImg} alt={news.postImgAlt} />
-            </div>
+            <Link to="">
+              <div className="card-img-container">
+                <img src={news.postImg} alt={news.postImgAlt} />
+              </div>
+            </Link>
             <p className="card-date">{news.date}</p>
             <p className="card-title">{news.postTitle}</p>
             <p className="card-desc">{news.postIntro}</p>
