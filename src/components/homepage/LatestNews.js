@@ -18,6 +18,7 @@ export const LatestNews = ({ data }) => {
   const olderNews = formattedNews.slice(-4);
   return (
     <div className="LatestNews">
+      <p className="heading">News</p>
       <div className="big-size-news">
         {mostRecentNews.map((news) => (
           <div className="news-card" key={news.id}>
@@ -41,6 +42,11 @@ export const LatestNews = ({ data }) => {
           </div>
         ))}
       </div> */}
+      <div>
+        <span className="action-button see-all-btn">
+          See all news articles{" >"}
+        </span>
+      </div>
     </div>
   );
 };

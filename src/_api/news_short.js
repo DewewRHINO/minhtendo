@@ -3,7 +3,8 @@ const news_short = [
     id: 0,
     postDateEpoch: "1640217600",
     postTitle: "A Nice Post Title 1",
-    postIntro: "A short post description of post 1",
+    postIntro:
+      "Hey, are you reading this text? This is a A good looking short post title for post number labeled and style as 1",
     postImg: "https://live.staticflickr.com/1795/29927928078_c705e8fcf1_n.jpg",
     postImgAlt: "Alt",
   },
@@ -11,7 +12,8 @@ const news_short = [
     id: 1,
     postDateEpoch: "1640217600",
     postTitle: "A Nice Post Title 2",
-    postIntro: "A short post description of post 2",
+    postIntro:
+      "Hey, are you reading this text? This is a A good looking short post title for post number labeled and style as 2",
     postImg: "https://live.staticflickr.com/1795/29927928078_c705e8fcf1_n.jpg",
     postImgAlt: "Alt",
   },
@@ -19,7 +21,8 @@ const news_short = [
     id: 2,
     postDateEpoch: "1640304000",
     postTitle: "A Nice Post Title 3",
-    postIntro: "A short post description of post 3",
+    postIntro:
+      "Hey, are you reading this text? This is a A good looking short post title for post number labeled and style as 3",
     postImg: "https://live.staticflickr.com/1795/29927928078_c705e8fcf1_n.jpg",
     postImgAlt: "Alt",
   },
@@ -27,7 +30,8 @@ const news_short = [
     id: 3,
     postDateEpoch: "1640736000",
     postTitle: "A Nice Post Title 4",
-    postIntro: "A short post description of post 4",
+    postIntro:
+      "Hey, are you reading this text? This is a A good looking short post title for post number labeled and style as 4",
     postImg: "https://live.staticflickr.com/1795/29927928078_c705e8fcf1_n.jpg",
     postImgAlt: "Alt",
   },
@@ -35,7 +39,8 @@ const news_short = [
     id: 4,
     postDateEpoch: "1640736000",
     postTitle: "A Nice Post Title 5",
-    postIntro: "A short post description of post 5",
+    postIntro:
+      "Hey, are you reading this text? This is a A good looking short post title for post number labeled and style as 5",
     postImg: "https://live.staticflickr.com/1795/29927928078_c705e8fcf1_n.jpg",
     postImgAlt: "Alt",
   },

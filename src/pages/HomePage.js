@@ -37,7 +37,6 @@ export const HomePage = () => {
       />
       <hr className="section-separator" />
       <LatestNews data={news_short} />
-      <hr className="section-separator" />
     </div>
   );
 };
