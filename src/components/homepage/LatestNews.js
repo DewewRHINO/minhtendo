@@ -55,11 +55,9 @@ export const LatestNews = ({ data }) => {
           </div>
         ))}
       </div>
-      <div>
-        <span className="action-button see-all-btn">
-          See all news articles{" >"}
-        </span>
-      </div>
+      <span className="action-button see-all-btn">
+        See all news articles{" >"}
+      </span>
     </div>
   );
 };
