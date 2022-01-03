@@ -5,6 +5,10 @@ import { CTABlade } from "../components/homepage/CTABlade";
 import SwitchShadow from "../media/Game_Store_Switch_Games.png";
 import HolidayGiftsImage from "../media/HGG_CTAminiblade.avif";
 import { AdGraphic } from "../components/homepage/AdGraphic";
+import { LatestNews } from "../components/homepage/LatestNews";
+
+// Local API
+import news_short from "../_api/news_short";
 
 export const HomePage = () => {
   return (
@@ -31,6 +35,9 @@ export const HomePage = () => {
         buttonUrl={"/"}
         bladeBgColor={"#5C0201"}
       />
+      <hr className="section-separator" />
+      <LatestNews data={news_short} />
+      <hr className="section-separator" />
     </div>
   );
 };
