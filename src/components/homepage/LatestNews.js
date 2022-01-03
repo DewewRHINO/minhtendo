@@ -12,10 +12,10 @@ export const LatestNews = ({ data }) => {
   return (
     <div className="LatestNews">
       {mostRecentNews.map((news) => (
-        <div>recent news</div>
+        <div key={news.id}>recent news</div>
       ))}
       {olderNews.map((news) => (
-        <div>older news</div>
+        <div key={news.id}>older news</div>
       ))}
     </div>
   );
