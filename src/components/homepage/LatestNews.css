@@ -18,13 +18,11 @@
 .LatestNews .big-size-news,
 .LatestNews .small-size-news {
   text-align: left;
-}
-
-.LatestNews .big-size-news {
   display: flex;
   gap: 2rem;
   align-items: flex-start;
   justify-content: space-around;
+  margin-bottom: 2rem;
 }
 
 .LatestNews .news-card {
@@ -82,7 +80,6 @@
 }
 
 .LatestNews .see-all-btn {
-  margin-top: 1rem;
   background-color: #e60012;
   color: #fff;
 }

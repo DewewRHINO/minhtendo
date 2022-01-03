@@ -38,13 +38,23 @@ export const LatestNews = ({ data }) => {
           </div>
         ))}
       </div>
-      {/* <div className="small-size-news">
+      <div className="small-size-news">
         {olderNews.map((news) => (
           <div className="news-card" key={news.id}>
-            older news
+            <Link to="">
+              <div className="card-img-container">
+                <img src={news.postImg} alt={news.postImgAlt} />
+              </div>
+            </Link>
+            <p className="card-date">{news.date}</p>
+            <p className="card-title">{news.postTitle}</p>
+            <div className="read-more-btn">
+              <span className="btn-text">Read more</span>
+              <span className="btn-icon">{" >"}</span>
+            </div>
           </div>
         ))}
-      </div> */}
+      </div>
       <div>
         <span className="action-button see-all-btn">
           See all news articles{" >"}
