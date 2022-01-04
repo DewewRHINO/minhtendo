@@ -40,8 +40,6 @@ export const HomePage = () => {
         bladeBgColor={"#5C0201"}
       />
       <hr className="section-separator" />
-      <LatestNews data={news_short} />
-      <hr className="section-separator" />
       <CardSlider
         data={latest_games}
         heading="Best-selling games"
@@ -50,6 +48,15 @@ export const HomePage = () => {
         hasFavButton
       />
       <hr className="section-separator" />
+      <LatestNews data={news_short} />
+      <hr className="section-separator" />
+      <CardSlider
+        data={latest_games}
+        heading="Nintendo Switch new releases"
+        displayDate
+        displayPrice
+        hasFavButton
+      />
     </div>
   );
 };
