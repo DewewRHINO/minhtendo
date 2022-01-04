@@ -13,7 +13,9 @@ export const AdGraphic = () => {
         <span className="action-text">
           Nintendo Switch family - Three ways to play
         </span>
-        <span className="action-button red-btn">Starting at $99.99 {" >"}</span>
+        <span className="action-button red-btn">
+          Starting at $199.99 {" >"}
+        </span>
       </div>
     </div>
   );
