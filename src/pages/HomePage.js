@@ -40,7 +40,11 @@ export const HomePage = () => {
       <hr className="section-separator" />
       <LatestNews data={news_short} />
       <hr className="section-separator" />
-      <CardSlider data={latest_games} />
+      <CardSlider
+        data={latest_games}
+        heading="Best-selling games"
+        containsPrice={true}
+      />
       <hr className="section-separator" />
     </div>
   );

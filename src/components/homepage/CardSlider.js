@@ -3,7 +3,11 @@ import { Link } from "react-router-dom";
 import { toMMDDYY } from "../../util/conversions";
 import "./CardSlider.css";
 
-export const CardSlider = ({ data }) => {
+// PARAMETERS
+// Array data
+// String heading
+// Boolean containsPrice
+export const CardSlider = ({ data, heading, containsPrice }) => {
   const games = [...data];
   //  sort chronologically
   const newToOldSortedGames = games.sort(
@@ -16,7 +20,7 @@ export const CardSlider = ({ data }) => {
   }
   return (
     <div className="CardSlider">
-      <p className="heading">Best-selling games</p>
+      {heading && <p className="heading">{heading}</p>}
       <div className="rail">
         <div className="tiles">
           {games.map((game) => (
@@ -28,7 +32,9 @@ export const CardSlider = ({ data }) => {
               </Link>
               <p className="card-date">{game.date}</p>
               <p className="card-title">{game.gameName}</p>
-              <p className="game-price card-title">{game.gameCurrentPrice}</p>
+              {containsPrice === true && (
+                <p className="game-price card-title">{game.gameCurrentPrice}</p>
+              )}
               <div className="card-tail">
                 <span className="game-platform">{game.gamePlatform}</span>
                 <span className="fav-btn">♡</span>
