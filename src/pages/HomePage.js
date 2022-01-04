@@ -17,6 +17,8 @@ export const HomePage = () => {
     <div className="HomePage">
       <CenterStage />
       <hr className="section-separator" />
+      <CardSlider data={latest_games} />
+      <hr className="section-separator" />
       <CTABlade
         imgUrl={SwitchShadow}
         imgAlt={"CTA Graphic"}
