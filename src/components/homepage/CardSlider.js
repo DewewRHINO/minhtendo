@@ -6,8 +6,14 @@ import "./CardSlider.css";
 // PARAMETERS
 // Array data
 // String heading
-// Boolean containsPrice
-export const CardSlider = ({ data, heading, containsPrice }) => {
+// Boolean displayDate, displayPrice, hasFavButton
+export const CardSlider = ({
+  data,
+  heading,
+  displayDate,
+  displayPrice,
+  hasFavButton,
+}) => {
   const games = [...data];
   //  sort chronologically
   const newToOldSortedGames = games.sort(
@@ -30,14 +36,14 @@ export const CardSlider = ({ data, heading, containsPrice }) => {
                   <img src={game.gameImg} alt={game.gameImgAlt} />
                 </div>
               </Link>
-              <p className="card-date">{game.date}</p>
+              {displayDate === true && <p className="card-date">{game.date}</p>}
               <p className="card-title">{game.gameName}</p>
-              {containsPrice === true && (
+              {displayPrice === true && (
                 <p className="game-price card-title">{game.gameCurrentPrice}</p>
               )}
               <div className="card-tail">
                 <span className="game-platform">{game.gamePlatform}</span>
-                <span className="fav-btn">♡</span>
+                {hasFavButton === true && <span className="fav-btn">♡</span>}
               </div>
             </div>
           ))}

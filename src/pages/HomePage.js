@@ -43,7 +43,9 @@ export const HomePage = () => {
       <CardSlider
         data={latest_games}
         heading="Best-selling games"
-        containsPrice={true}
+        displayDate
+        displayPrice
+        hasFavButton
       />
       <hr className="section-separator" />
     </div>
