@@ -1,4 +1,8 @@
 import React from "react";
+// Local API
+import news_short from "../_api/news_short";
+import latest_games from "../_api/latest_games";
+
 import "./HomePage.css";
 import { CenterStage } from "../components/homepage/CenterStage";
 import { CTABlade } from "../components/homepage/CTABlade";
@@ -6,9 +10,7 @@ import SwitchShadow from "../media/Game_Store_Switch_Games.png";
 import HolidayGiftsImage from "../media/HGG_CTAminiblade.avif";
 import { AdGraphic } from "../components/homepage/AdGraphic";
 import { LatestNews } from "../components/homepage/LatestNews";
-
-// Local API
-import news_short from "../_api/news_short";
+import { CardSlider } from "../components/homepage/CardSlider";
 
 export const HomePage = () => {
   return (
@@ -37,6 +39,9 @@ export const HomePage = () => {
       />
       <hr className="section-separator" />
       <LatestNews data={news_short} />
+      <hr className="section-separator" />
+      <CardSlider data={latest_games} />
+      <hr className="section-separator" />
     </div>
   );
 };

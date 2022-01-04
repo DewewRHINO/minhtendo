@@ -1,0 +1,96 @@
+.CardSlider {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  max-width: 100%;
+  padding: 0 1rem;
+}
+
+.CardSlider .heading {
+  width: 1200px;
+  max-width: 95%;
+  text-align: left;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin: 0 auto 1.5rem auto;
+}
+
+.CardSlider .rail {
+  width: 100%;
+  overflow-x: auto;
+  padding: 1rem;
+}
+
+.CardSlider .rail::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+.CardSlider .rail .tiles {
+  display: flex;
+  text-align: left;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.CardSlider .game-card:last-child {
+  box-sizing: content-box;
+  border-right: 1rem solid transparent;
+}
+
+.CardSlider .game-card {
+  min-width: 275px;
+  object-fit: cover;
+}
+
+.CardSlider .game-card .card-img-container {
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(218, 218, 218);
+  overflow: hidden;
+}
+.CardSlider .game-card .card-img-container:hover {
+  filter: brightness(75%);
+  transition: filter 0.2s ease-in 50ms;
+}
+
+.CardSlider .game-card .card-img-container img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.CardSlider .game-card .card-date {
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-weight: 350;
+}
+
+.CardSlider .game-card .card-title {
+  font-weight: 650;
+  font-size: 1.25rem;
+}
+
+.CardSlider .game-card .card-tail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 2.5rem;
+}
+
+.CardSlider .game-card .card-tail .game-platform {
+  border-bottom: 2px solid #e60012;
+}
+
+.CardSlider .game-card .card-tail .fav-btn {
+  font-size: 2rem;
+  color: #e60012;
+}
+
+.CardSlider .game-card .card-tail .fav-btn:hover {
+  cursor: pointer;
+  color: #ac000d;
+}
