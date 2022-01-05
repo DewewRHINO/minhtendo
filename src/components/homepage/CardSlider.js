@@ -27,12 +27,15 @@ export const CardSlider = ({
   const handleScrollTiles = (e, dir) => {
     const tiles =
       e.target.parentElement.parentElement.childNodes[0].childNodes[0];
-    const cardWidth = tiles.childNodes[0].offsetWidth;
+    const cardWidth =
+      tiles.childNodes[0].offsetWidth +
+      parseFloat(getComputedStyle(tiles).fontSize) * 2; //  width of 1 card + 2 rem flex gap
     if (dir === "next") {
-      tiles.scrollLeft += window.innerWidth - cardWidth; //  '- cardWidth' ensures the rightmost visible card is included again in next scroll in case it was clipped out partially
+      // to scroll by a total width of FULLY visible cards (so that the next scroll starts from the left edge of the next card perfectly)
+      tiles.scrollLeft += Math.floor(tiles.clientWidth / cardWidth) * cardWidth;
       if (lastScrollPos === tiles.scrollLeft) tiles.scrollLeft = 0;
     } else if (dir === "prev") {
-      tiles.scrollLeft -= window.innerWidth - cardWidth;
+      tiles.scrollLeft -= Math.floor(tiles.clientWidth / cardWidth) * cardWidth;
     }
     setLastScrollPos(tiles.scrollLeft);
   };
