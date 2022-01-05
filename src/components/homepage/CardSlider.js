@@ -29,9 +29,8 @@ export const CardSlider = ({
       e.target.parentElement.parentElement.childNodes[0].childNodes[0];
     if (dir === "next") {
       console.log("Last pos ", lastScrollPos);
-      lastScrollPos > 0 && lastScrollPos === tiles.scrollLeft
-        ? (tiles.scrollLeft = 0)
-        : (tiles.scrollLeft += window.innerWidth);
+      tiles.scrollLeft += window.innerWidth;
+      if (lastScrollPos === tiles.scrollLeft) tiles.scrollLeft = 0;
     } else if (dir === "prev") {
       tiles.scrollLeft -= window.innerWidth;
     }
