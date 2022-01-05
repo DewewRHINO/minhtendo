@@ -33,7 +33,7 @@ export const CardSlider = ({
     if (dir === "next") {
       // to scroll by a total width of FULLY visible cards (so that the next scroll starts from the left edge of the next card perfectly)
       tiles.scrollLeft += Math.floor(tiles.clientWidth / cardWidth) * cardWidth;
-      if (lastScrollPos === tiles.scrollLeft) tiles.scrollLeft = 0;
+      if (lastScrollPos === tiles.scrollLeft) tiles.scrollLeft = 0; //  loop scroll back from the start if it is the end
     } else if (dir === "prev") {
       tiles.scrollLeft -= Math.floor(tiles.clientWidth / cardWidth) * cardWidth;
     }
