@@ -45,10 +45,10 @@ export const CardSlider = ({
             </div>
           ))}
         </div>
-        <div className="controls">
-          <button className="prev-btn">{"<"}</button>
-          <button className="next-btn">{">"}</button>
-        </div>
+      </div>
+      <div className="controls">
+        <button className="prev-btn">{"<"}</button>
+        <button className="next-btn">{">"}</button>
       </div>
     </div>
   );
