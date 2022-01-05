@@ -2,6 +2,8 @@ import React from "react";
 import "./CTABlade.css";
 import SwitchShadow from "../../media/Game_Store_Switch_Games.png";
 
+// PARAMETERS
+// String imgUrl, imgAlt, bladeDesc, bladeText, buttonUrl, bladeBgColor, bladeTextColor
 export const CTABlade = ({
   imgUrl,
   imgAlt,
