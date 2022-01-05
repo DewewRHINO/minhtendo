@@ -110,7 +110,7 @@
 
 .CardSlider:hover .controls {
   opacity: 1;
-  transition: opacity 0.2s ease-in 0.1s;
+  transition: opacity 0.2s ease-in;
 }
 
 .CardSlider .controls button {
