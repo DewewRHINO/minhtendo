@@ -29,13 +29,20 @@ export const CardSlider = ({
       e.target.parentElement.parentElement.childNodes[0].childNodes[0];
     const cardWidth =
       tiles.childNodes[0].offsetWidth +
-      parseFloat(getComputedStyle(tiles).fontSize) * 2; //  width of 1 card + 2 rem flex gap
+      parseFloat(getComputedStyle(tiles).fontSize) * 2; // total width of (1 card + 2 rem flex gap)
     if (dir === "next") {
-      // to scroll by a total width of FULLY visible cards (so that the next scroll starts from the left edge of the next card perfectly)
+      //   The following Math calculations make sure NEXTscroll always aligns cards left-first
       tiles.scrollLeft += Math.floor(tiles.clientWidth / cardWidth) * cardWidth;
-      if (lastScrollPos === tiles.scrollLeft) tiles.scrollLeft = 0; //  loop scroll back from the start if it is the end
+      if (lastScrollPos === tiles.scrollLeft) tiles.scrollLeft = 0; //  looping the scroll
     } else if (dir === "prev") {
-      tiles.scrollLeft -= Math.floor(tiles.clientWidth / cardWidth) * cardWidth;
+      //   The following Math calculations make sure PREVscroll always aligns cards left-first,
+      //   by calculating scroll conditionally when a left-side offset is created on the last scroll
+      Math.ceil(tiles.scrollLeft) % cardWidth
+        ? (tiles.scrollLeft -=
+            Math.floor(tiles.clientWidth / cardWidth) * cardWidth +
+            (Math.ceil(tiles.scrollLeft) % cardWidth))
+        : (tiles.scrollLeft -=
+            Math.floor(tiles.clientWidth / cardWidth) * cardWidth);
     }
     setLastScrollPos(tiles.scrollLeft);
   };
