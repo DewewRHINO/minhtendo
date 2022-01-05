@@ -40,7 +40,8 @@ export const CardSlider = ({
       Math.ceil(tiles.scrollLeft) % cardWidth
         ? (tiles.scrollLeft -=
             Math.floor(tiles.clientWidth / cardWidth) * cardWidth +
-            (Math.ceil(tiles.scrollLeft) % cardWidth))
+            (Math.ceil(tiles.scrollLeft) % cardWidth) -
+            cardWidth)
         : (tiles.scrollLeft -=
             Math.floor(tiles.clientWidth / cardWidth) * cardWidth);
     }
