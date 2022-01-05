@@ -37,7 +37,7 @@ export const CardSlider = ({
                 </div>
               </Link>
               {displayDate === true && <p className="card-date">{game.date}</p>}
-              <p className="card-title">{game.gameName}</p>
+              <p className="game-name card-title">{game.gameName}</p>
               {displayPrice === true && (
                 <p className="game-price card-title">{game.gameCurrentPrice}</p>
               )}

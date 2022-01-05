@@ -75,6 +75,11 @@
   font-size: 1.25rem;
 }
 
+.CardSlider .game-card .game-name:hover {
+  cursor: pointer;
+  color: #e60012;
+}
+
 .CardSlider .game-card .card-tail {
   display: flex;
   align-items: center;
