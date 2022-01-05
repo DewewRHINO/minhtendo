@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { toMMDDYY } from "../../util/conversions";
 import "./CardSlider.css";
@@ -12,6 +12,7 @@ export const CardSlider = ({
   displayPrice,
   hasFavButton,
 }) => {
+  const [lastScrollPos, setLastScrollPos] = useState(0);
   const games = [...data];
   //  sort chronologically
   const newToOldSortedGames = games.sort(
@@ -22,6 +23,22 @@ export const CardSlider = ({
   for (let i = 0; i < formattedNews.length; i++) {
     formattedNews[i].date = toMMDDYY(formattedNews[i].releaseDateEpoch);
   }
+
+  const handleScrollTiles = (e, dir) => {
+    const tiles =
+      e.target.parentElement.parentElement.childNodes[0].childNodes[0];
+    if (dir === "next") {
+      console.log("Last pos ", lastScrollPos);
+      lastScrollPos > 0 && lastScrollPos === tiles.scrollLeft
+        ? (tiles.scrollLeft = 0)
+        : (tiles.scrollLeft += window.innerWidth);
+    } else if (dir === "prev") {
+      tiles.scrollLeft -= window.innerWidth;
+    }
+    setLastScrollPos(tiles.scrollLeft);
+    console.log("After scroll: ", tiles.scrollLeft, lastScrollPos);
+  };
+
   return (
     <div className="CardSlider">
       <div className="rail">
@@ -47,8 +64,18 @@ export const CardSlider = ({
         </div>
       </div>
       <div className="controls">
-        <button className="prev-btn">{"<"}</button>
-        <button className="next-btn">{">"}</button>
+        <button
+          className="prev-btn"
+          onClick={(e) => handleScrollTiles(e, "prev")}
+        >
+          {"<"}
+        </button>
+        <button
+          className="next-btn"
+          onClick={(e) => handleScrollTiles(e, "next")}
+        >
+          {">"}
+        </button>
       </div>
     </div>
   );
