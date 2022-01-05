@@ -1,4 +1,4 @@
-const latest_games = [
+const bestseller_games = [
   {
     gameId: 1,
     gameName: "Pokémon™ Brilliant Diamond",
@@ -111,4 +111,4 @@ const latest_games = [
   },
 ];
 
-export default latest_games;
+export default bestseller_games;

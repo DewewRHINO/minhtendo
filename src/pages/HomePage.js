@@ -1,7 +1,7 @@
 import React from "react";
 // Local API
 import news_short from "../_api/news_short";
-import latest_games from "../_api/latest_games";
+import bestseller_games from "../_api/bestseller_games";
 
 import "./HomePage.css";
 import { CenterStage } from "../components/homepage/CenterStage";
@@ -17,7 +17,7 @@ export const HomePage = () => {
     <div className="HomePage">
       <CenterStage />
       <hr className="section-separator" />
-      <CardSlider data={latest_games} />
+      <CardSlider data={bestseller_games} />
       <hr className="section-separator" />
       <CTABlade
         imgUrl={SwitchShadow}
@@ -41,7 +41,7 @@ export const HomePage = () => {
       />
       <hr className="section-separator" />
       <CardSlider
-        data={latest_games}
+        data={bestseller_games}
         heading="Best-selling games"
         displayDate
         displayPrice
@@ -51,7 +51,7 @@ export const HomePage = () => {
       <LatestNews data={news_short} />
       <hr className="section-separator" />
       <CardSlider
-        data={latest_games}
+        data={bestseller_games}
         heading="Nintendo Switch new releases"
         displayDate
         displayPrice
