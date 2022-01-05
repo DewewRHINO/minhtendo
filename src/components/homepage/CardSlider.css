@@ -22,7 +22,6 @@
   width: 100%;
   height: 100%;
   padding: 2rem;
-  /* background-color: bisque; */
 }
 
 .CardSlider .rail .tiles::-webkit-scrollbar {
@@ -120,8 +119,12 @@
 
 .CardSlider .controls .prev-btn {
   left: 0;
+  border-top-right-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
 }
 
 .CardSlider .controls .next-btn {
   right: 0;
+  border-top-left-radius: 0.2rem;
+  border-bottom-left-radius: 0.2rem;
 }

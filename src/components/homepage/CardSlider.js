@@ -9,7 +9,6 @@ import "./CardSlider.css";
 // Boolean displayDate, displayPrice, hasFavButton
 export const CardSlider = ({
   data,
-
   displayDate,
   displayPrice,
   hasFavButton,
