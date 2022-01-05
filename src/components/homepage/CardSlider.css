@@ -103,6 +103,16 @@
   color: #ac000d;
 }
 
+.CardSlider .controls {
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}
+
+.CardSlider:hover .controls {
+  opacity: 1;
+  transition: opacity 0.2s ease-in 0.1s;
+}
+
 .CardSlider .controls button {
   border: none;
   outline: none;
