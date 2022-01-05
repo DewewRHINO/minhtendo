@@ -5,7 +5,6 @@ import GamingSystemGraphic from "../../media/ExploreGamingSystems.jfif";
 export const AdGraphic = () => {
   return (
     <div className="AdGraphic">
-      <p className="heading">Explore gaming systems</p>
       <div className="img-container">
         <img src={GamingSystemGraphic} alt="graphic ad" />
       </div>

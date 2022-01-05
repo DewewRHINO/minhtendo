@@ -9,7 +9,7 @@ import "./CardSlider.css";
 // Boolean displayDate, displayPrice, hasFavButton
 export const CardSlider = ({
   data,
-  heading,
+
   displayDate,
   displayPrice,
   hasFavButton,
@@ -26,7 +26,6 @@ export const CardSlider = ({
   }
   return (
     <div className="CardSlider">
-      {heading && <p className="heading">{heading}</p>}
       <div className="rail">
         <div className="tiles">
           {games.map((game) => (

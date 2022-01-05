@@ -11,6 +11,7 @@ import HolidayGiftsImage from "../media/HGG_CTAminiblade.avif";
 import { AdGraphic } from "../components/homepage/AdGraphic";
 import { LatestNews } from "../components/homepage/LatestNews";
 import { CardSlider } from "../components/homepage/CardSlider";
+import { SectionHeader } from "../common_components/SectionHeader";
 
 export const HomePage = () => {
   return (
@@ -27,6 +28,7 @@ export const HomePage = () => {
         buttonUrl={"/"}
       />
       <hr className="section-separator" />
+      <SectionHeader heading="Explore gaming systems" />
       <AdGraphic />
       <hr className="section-separator" />
       <CTABlade
@@ -40,19 +42,20 @@ export const HomePage = () => {
         bladeBgColor={"#5C0201"}
       />
       <hr className="section-separator" />
+      <SectionHeader heading="Best-selling games" fontSize="2rem" />
       <CardSlider
         data={bestseller_games}
-        heading="Best-selling games"
         displayDate
         displayPrice
         hasFavButton
       />
       <hr className="section-separator" />
+      <SectionHeader heading="News" />
       <LatestNews data={news_short} />
       <hr className="section-separator" />
+      <SectionHeader heading="Nintendo Switch new releases" fontSize="2rem" />
       <CardSlider
         data={bestseller_games}
-        heading="Nintendo Switch new releases"
         displayDate
         displayPrice
         hasFavButton

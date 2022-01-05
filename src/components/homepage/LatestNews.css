@@ -7,14 +7,6 @@
   max-width: 95%;
 }
 
-.LatestNews .heading {
-  text-align: left;
-  font-weight: 600;
-  font-size: 2.5rem;
-  line-height: 2.5rem;
-  margin: 0 0 1.5rem 0;
-}
-
 .LatestNews .big-size-news,
 .LatestNews .small-size-news {
   text-align: left;
