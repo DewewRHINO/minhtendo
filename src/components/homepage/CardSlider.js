@@ -5,7 +5,6 @@ import "./CardSlider.css";
 
 // PARAMETERS
 // Array data
-// String heading
 // Boolean displayDate, displayPrice, hasFavButton
 export const CardSlider = ({
   data,
