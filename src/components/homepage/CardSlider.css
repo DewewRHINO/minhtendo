@@ -4,7 +4,8 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
   max-width: 100%;
-  padding: 0 1rem;
+  padding: 0;
+  position: relative;
 }
 
 .CardSlider .heading {
@@ -19,27 +20,29 @@
 
 .CardSlider .rail {
   width: 100%;
-  overflow-x: auto;
-  padding: 1rem;
+  height: 100%;
+  padding: 2rem;
+  /* background-color: bisque; */
 }
 
-.CardSlider .rail::-webkit-scrollbar {
+.CardSlider .rail .tiles::-webkit-scrollbar {
   width: 0;
   background: transparent;
 }
 
 .CardSlider .rail .tiles {
   display: flex;
+  overflow-x: auto;
   text-align: left;
   align-items: flex-start;
   justify-content: space-between;
   gap: 2rem;
 }
 
-.CardSlider .game-card:last-child {
+/* .CardSlider .game-card:last-child {
   box-sizing: content-box;
   border-right: 1rem solid transparent;
-}
+} */
 
 .CardSlider .game-card {
   min-width: 275px;
@@ -99,4 +102,26 @@
 .CardSlider .game-card .card-tail .fav-btn:hover {
   cursor: pointer;
   color: #ac000d;
+}
+
+.CardSlider .controls button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 3rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.CardSlider .controls .prev-btn {
+  left: 0;
+}
+
+.CardSlider .controls .next-btn {
+  right: 0;
 }
