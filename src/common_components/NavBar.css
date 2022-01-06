@@ -1,3 +1,10 @@
+.NavBar {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 9999;
+}
+
 .NavBar .nav-section {
   border-bottom: 1px solid rgb(226, 226, 226);
 }
