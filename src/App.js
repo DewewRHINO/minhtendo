@@ -8,7 +8,7 @@ import { GamesPage } from "./pages/GamesPage";
 import { HardwarePage } from "./pages/HardwarePage";
 import { NewsPage } from "./pages/NewsPage";
 import { HolidayPage } from "./pages/HolidayPage";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 function App() {
   let prevScroll = 0;
@@ -38,7 +38,6 @@ function App() {
   return (
     <Router>
       <div className="App">
-        {/* {goingUp && <NavBar />} */}
         <NavBar innerRef={navRef} />
         <Routes>
           <Route path="/" element={<HomePage />} />
