@@ -3,9 +3,9 @@ import "./NavBar.css";
 import { Link } from "react-router-dom";
 import BrandLogo from "../media/landscape-logo.png";
 
-export const NavBar = () => {
+export const NavBar = ({ innerRef }) => {
   return (
-    <div className="NavBar">
+    <div className="NavBar" ref={innerRef}>
       <div className="nav-section nav-sec-1">
         <div className="brand-box">
           <Link to="">

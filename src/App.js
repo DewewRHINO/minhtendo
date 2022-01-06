@@ -8,11 +8,15 @@ import { GamesPage } from "./pages/GamesPage";
 import { HardwarePage } from "./pages/HardwarePage";
 import { NewsPage } from "./pages/NewsPage";
 import { HolidayPage } from "./pages/HolidayPage";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 function App() {
-  let prevScroll = window.scrollY;
-  const [goingUp, setGoingUp] = useState(false);
+  let prevScroll = 0;
+  const navRef = useRef();
+
+  useEffect(() => {
+    console.log("Re-rendering App.");
+  });
 
   useEffect(() => {
     document.addEventListener("scroll", handleNavToggle);
@@ -22,21 +26,11 @@ function App() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  useEffect(() => {
-    console.log("Re-rendering the app.");
-  });
-
   const handleNavToggle = () => {
-    console.log(
-      "Last scroll was: ",
-      prevScroll,
-      "Current scroll is: ",
-      window.scrollY
-    );
     if (prevScroll > window.scrollY) {
-      setGoingUp(true);
+      navRef.current.classList.add("toggle-nav-in");
     } else if (prevScroll < window.scrollY) {
-      setGoingUp(false);
+      navRef.current.classList.remove("toggle-nav-in");
     }
     prevScroll = window.scrollY;
   };
@@ -44,7 +38,8 @@ function App() {
   return (
     <Router>
       <div className="App">
-        {goingUp && <NavBar />}
+        {/* {goingUp && <NavBar />} */}
+        <NavBar innerRef={navRef} />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/games" element={<GamesPage />} />

@@ -1,8 +1,14 @@
 .NavBar {
   position: sticky;
-  top: 0;
+  top: -100px;
   background-color: #fff;
   z-index: 9999;
+  transition: top 0.5s ease-in 0.2s;
+}
+
+.toggle-nav-in {
+  top: 0;
+  transition: top 0.5s ease-in 0.2s;
 }
 
 .NavBar .nav-section {
