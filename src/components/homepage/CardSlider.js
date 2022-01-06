@@ -13,6 +13,7 @@ export const CardSlider = ({
   hasFavButton,
 }) => {
   const [lastScrollPos, setLastScrollPos] = useState(0);
+  const [showPrevScrollBtn, setShowPrevScrollBtn] = useState(false);
   const games = [...data];
   //  sort chronologically
   const newToOldSortedGames = games.sort(
@@ -46,6 +47,10 @@ export const CardSlider = ({
             Math.floor(tiles.clientWidth / cardWidth) * cardWidth);
     }
     setLastScrollPos(tiles.scrollLeft);
+    //  Hide Prev Btn when not needed
+    tiles.scrollLeft !== 0
+      ? setShowPrevScrollBtn(true)
+      : setShowPrevScrollBtn(false);
   };
 
   return (
@@ -73,12 +78,14 @@ export const CardSlider = ({
         </div>
       </div>
       <div className="controls">
-        <button
-          className="prev-btn"
-          onClick={(e) => handleScrollTiles(e, "prev")}
-        >
-          {"<"}
-        </button>
+        {showPrevScrollBtn && (
+          <button
+            className="prev-btn"
+            onClick={(e) => handleScrollTiles(e, "prev")}
+          >
+            {"<"}
+          </button>
+        )}
         <button
           className="next-btn"
           onClick={(e) => handleScrollTiles(e, "next")}
