@@ -2,7 +2,7 @@
   position: sticky;
   top: -100px;
   background-color: #fff;
-  z-index: 9999;
+  z-index: 20000;
   transition: top 0.5s ease-in 0.2s;
 }
 
@@ -21,6 +21,8 @@
   flex-wrap: nowrap;
   align-items: stretch;
   padding-right: 1rem;
+  position: relative;
+  background-color: #fff;
 }
 
 .NavBar .brand-box {
@@ -75,6 +77,30 @@
 .NavBar .searchfield::placeholder {
   pointer-events: none;
   font-size: 0.9rem;
+}
+
+.NavBar .search-assist {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  height: 500px;
+  width: 100%;
+}
+
+.NavBar .search-assist .overlay-shadow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.NavBar .search-assist .search-assist-content {
+  /* z-index: 10000; */
 }
 
 .NavBar .my-nav-btn {

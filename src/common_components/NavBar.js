@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./NavBar.css";
 import { Link } from "react-router-dom";
 import BrandLogo from "../media/landscape-logo.png";
 
 export const NavBar = ({ innerRef }) => {
+  const [openSearch, setOpenSearch] = useState(false);
   return (
     <div className="NavBar" ref={innerRef}>
       <div className="nav-section nav-sec-1">
@@ -13,7 +14,10 @@ export const NavBar = ({ innerRef }) => {
           </Link>
         </div>
         <div className="search-box">
-          <div className="search-box-content">
+          <div
+            className="search-box-content"
+            onClick={() => setOpenSearch(true)}
+          >
             <label htmlFor="searchfield" className="searchlabel">
               &#128269;
             </label>
@@ -23,6 +27,37 @@ export const NavBar = ({ innerRef }) => {
               size={50}
             />
           </div>
+          {openSearch && (
+            <div className="search-assist">
+              <div
+                className="overlay-shadow"
+                onClick={() => setOpenSearch(false)}
+              ></div>
+              <div className="search-assist-content">
+                <div className="nav-section nav-sec-1 duplicate-logo-and-input">
+                  <div className="brand-box">
+                    <Link to="">
+                      <img src={BrandLogo} alt="brand" />
+                    </Link>
+                  </div>
+                  <div className="search-box">
+                    <div className="search-box-content">
+                      <label htmlFor="searchfield" className="searchlabel">
+                        &#128269;
+                      </label>
+                      <input
+                        className="searchfield"
+                        placeholder="Search games, systems, supports, etc."
+                        size={50}
+                        autoFocus
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="search-suggestion-box">Search Suggestions</div>
+              </div>
+            </div>
+          )}
         </div>
         <div className="nav-buttons">
           <div className="nav-btn-box">
