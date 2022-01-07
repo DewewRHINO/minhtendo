@@ -118,7 +118,6 @@
   left: 0;
   background-color: #fff;
   width: 100%;
-  z-index: 20000;
 }
 
 .NavBar .search-assist .overlay-shadow {
@@ -129,11 +128,10 @@
   height: 100vh;
   background-color: #000;
   opacity: 0.8;
-  z-index: 20000;
+  z-index: -1;
 }
 
 .NavBar .search-assist-content {
-  z-index: 20001;
 }
 
 .NavBar .close-search-btn {
