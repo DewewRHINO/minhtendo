@@ -60,11 +60,16 @@
 }
 
 .NavBar .search-box-content {
+  cursor: pointer;
   display: flex;
   align-items: center;
   align-self: center;
   height: 75%;
   border-bottom: 1px solid #000;
+}
+
+.NavBar .duplicate-logo-and-input .search-box-content {
+  cursor: auto;
 }
 
 .NavBar .search-box-content:hover {
