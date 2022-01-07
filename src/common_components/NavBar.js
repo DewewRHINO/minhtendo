@@ -24,6 +24,7 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
               className="searchfield"
               placeholder="Search games, systems, supports, etc."
               size={50}
+              tabIndex={-1}
             />
           </div>
           {openSearch && (
