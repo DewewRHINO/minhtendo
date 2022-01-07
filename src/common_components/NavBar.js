@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import BrandLogo from "../media/landscape-logo.png";
 
 export const NavBar = ({ innerRef }) => {
-  const [openSearch, setOpenSearch] = useState(false);
+  const [openSearch, setOpenSearch] = useState(true);
   return (
     <div className="NavBar" ref={innerRef}>
       <div className="nav-section nav-sec-1">
@@ -54,7 +54,38 @@ export const NavBar = ({ innerRef }) => {
                     </div>
                   </div>
                 </div>
-                <div className="search-suggestion-box">Search Suggestions</div>
+                <div className="search-suggestion-box">
+                  <div className="quick-links">
+                    <div className="suggestions">
+                      <p className="suggestion-title">Suggestions</p>
+                      <Link to="" className="suggestion-link">
+                        <p>Nintendo Switch</p>
+                      </Link>
+                      <Link to="" className="suggestion-link">
+                        <p>Nintendo Switch Games</p>
+                      </Link>
+                      <Link to="" className="suggestion-link">
+                        <p>Nintendo Switch Online</p>
+                      </Link>
+                      <Link to="" className="suggestion-link">
+                        <p>Nintendo news</p>
+                      </Link>
+                      <Link to="" className="suggestion-link">
+                        <p>Ring Fit Adventure</p>
+                      </Link>
+                      <Link to="" className="suggestion-link">
+                        <p>Mario games</p>
+                      </Link>
+                      <Link to="" className="suggestion-link">
+                        <p>Zelda games</p>
+                      </Link>
+                      <Link to="" className="suggestion-link">
+                        <p>Pokemon games</p>
+                      </Link>
+                    </div>
+                    <div className="link-cards"></div>
+                  </div>
+                </div>
               </div>
             </div>
           )}
