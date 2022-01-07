@@ -84,7 +84,6 @@
   top: 0;
   left: 0;
   background-color: #fff;
-  height: 500px;
   width: 100%;
 }
 
@@ -101,6 +100,30 @@
 
 .NavBar .search-assist .search-assist-content {
   /* z-index: 10000; */
+}
+
+.NavBar .search-suggestion-box {
+  display: flex;
+  padding-left: 200px;
+}
+
+.NavBar .suggestions {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 0.9rem;
+  padding: 1rem 0;
+  margin: 0 1.5rem;
+}
+
+.NavBar .suggestions-title {
+  font-weight: 600;
+}
+
+.NavBar .suggestion-link {
+  font-weight: 700;
+  color: #e60012;
+  line-height: 0.9rem;
 }
 
 .NavBar .my-nav-btn {
