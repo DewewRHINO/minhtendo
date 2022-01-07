@@ -25,7 +25,6 @@ function App() {
 
   useEffect(() => {
     console.log("Re-rendering App.");
-    console.log(window.scrollY);
   });
 
   useEffect(() => {
