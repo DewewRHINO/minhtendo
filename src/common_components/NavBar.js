@@ -3,8 +3,8 @@ import "./NavBar.css";
 import { Link } from "react-router-dom";
 import BrandLogo from "../media/landscape-logo.png";
 
-export const NavBar = ({ innerRef }) => {
-  const [openSearch, setOpenSearch] = useState(true);
+export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
+  // const [openSearch, setOpenSearch] = useState(true);
   return (
     <div className="NavBar" ref={innerRef}>
       <div className="nav-section nav-sec-1">
