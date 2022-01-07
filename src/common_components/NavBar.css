@@ -25,6 +25,10 @@
   background-color: #fff;
 }
 
+.NavBar .duplicate-logo-and-input {
+  border: none;
+}
+
 .NavBar .brand-box {
   display: flex;
   flex-direction: row;
@@ -50,11 +54,16 @@
 .NavBar .search-box-content {
   display: flex;
   align-items: center;
-  height: 80%;
+  align-self: center;
+  height: 75%;
   border-bottom: 1px solid #000;
 }
 
 .NavBar .search-box-content:hover {
+  border-bottom: 1px solid rgb(255, 0, 0);
+}
+
+.NavBar .duplicate-logo-and-input .search-box-content {
   border-bottom: 1px solid rgb(255, 0, 0);
 }
 
@@ -65,9 +74,14 @@
 }
 
 .NavBar .searchfield {
+  cursor: pointer;
   border: 0;
   padding: 0;
   width: 100%;
+}
+
+.NavBar .duplicate-logo-and-input .searchfield {
+  cursor: text;
 }
 
 .NavBar .searchfield:focus {
@@ -98,8 +112,17 @@
   z-index: -1;
 }
 
-.NavBar .search-assist .search-assist-content {
-  /* z-index: 10000; */
+.NavBar .close-search-btn {
+  display: inline-block;
+  align-self: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #888;
+  margin-left: 1rem;
+}
+.NavBar .close-search-btn:hover {
+  cursor: pointer;
+  color: #e60012;
 }
 
 .NavBar .search-suggestion-box {

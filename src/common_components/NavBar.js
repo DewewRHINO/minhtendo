@@ -52,6 +52,12 @@ export const NavBar = ({ innerRef }) => {
                         autoFocus
                       />
                     </div>
+                    <span
+                      className="close-search-btn"
+                      onClick={() => setOpenSearch(false)}
+                    >
+                      X
+                    </span>
                   </div>
                 </div>
                 <div className="search-suggestion-box">
