@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./NavBar.css";
 import { Link } from "react-router-dom";
 import BrandLogo from "../media/landscape-logo.png";
@@ -15,6 +15,7 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
         <div className="search-box">
           <div
             className="search-box-content"
+            // onClick={() => setOpenSearch(true)}
             onClick={() => setOpenSearch(true)}
           >
             <label htmlFor="searchfield" className="searchlabel">

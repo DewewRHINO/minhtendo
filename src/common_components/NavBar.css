@@ -137,6 +137,18 @@
 }
 
 .NavBar .search-assist-content {
+  transform-origin: center top;
+  transform: scaleY(0);
+  animation: slideDown 0.3s ease-in-out forwards;
+}
+
+@keyframes slideDown {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
 }
 
 .NavBar .close-search-btn {
