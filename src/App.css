@@ -5,6 +5,7 @@ input::placeholder {
 .App {
   text-align: center;
   color: #484848;
+  background-color: #fff;
 }
 
 .App .action-button {

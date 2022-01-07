@@ -18,12 +18,14 @@ function App() {
 
   useEffect(() => {
     console.log("Mounted App.");
-    setNavHeight(getComputedStyle(navRef.current).height);
-    console.log(navHeight);
+    setNavHeight(
+      `${parseFloat(getComputedStyle(navRef.current).height) - 5}px`
+    );
   }, []);
 
   useEffect(() => {
     console.log("Re-rendering App.");
+    console.log(window.scrollY);
   });
 
   useEffect(() => {
@@ -47,7 +49,7 @@ function App() {
 
   return (
     <Router>
-      <div className="App">
+      <div className="App" style={{ paddingTop: navHeight }}>
         <NavBar
           innerRef={navRef}
           openSearch={openSearch}

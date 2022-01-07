@@ -1,12 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import "./NavBar.css";
 import { Link } from "react-router-dom";
 import BrandLogo from "../media/landscape-logo.png";
 
 export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
-  // const [openSearch, setOpenSearch] = useState(true);
   return (
-    <div className="NavBar" ref={innerRef}>
+    <div className="NavBar toggle-nav-in" ref={innerRef}>
       <div className="nav-section nav-sec-1">
         <div className="brand-box">
           <Link to="">
