@@ -47,7 +47,7 @@ export const NavBar = ({ innerRef }) => {
                       </label>
                       <input
                         className="searchfield"
-                        placeholder="Search games, systems, supports, etc."
+                        placeholder="Search Nintendo.com"
                         size={50}
                         autoFocus
                       />

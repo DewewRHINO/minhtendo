@@ -1,3 +1,7 @@
+input::placeholder {
+  color: #777;
+}
+
 .App {
   text-align: center;
   color: #484848;
