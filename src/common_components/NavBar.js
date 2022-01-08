@@ -4,13 +4,6 @@ import { Link } from "react-router-dom";
 import BrandLogo from "../media/landscape-logo.png";
 
 export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
-  const handleCloseSearch = () => {
-    console.log("handleCloseSearch");
-    setTimeout(() => {
-      console.log("Waited");
-      return { visibility: "hidden" };
-    }, 3000);
-  };
   return (
     <div className="NavBar toggle-nav-in" ref={innerRef}>
       <div className="nav-section nav-sec-1">
