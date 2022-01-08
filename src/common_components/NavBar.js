@@ -57,7 +57,10 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
                     <img src={BrandLogo} alt="brand" />
                   </Link>
                 </div>
-                <div className="search-box">
+                <div
+                  className="search-box"
+                  style={openSearch ? { opacity: "1" } : { opacity: "0" }}
+                >
                   <div className="search-box-content">
                     <label htmlFor="searchfield" className="searchlabel">
                       &#128269;
