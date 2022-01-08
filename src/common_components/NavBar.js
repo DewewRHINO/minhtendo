@@ -1,9 +1,14 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import "./NavBar.css";
 import { Link } from "react-router-dom";
 import BrandLogo from "../media/landscape-logo.png";
 
 export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
+  const searchRef = useRef();
+  useEffect(() => {
+    openSearch && searchRef.current.focus();
+  }, [openSearch]);
+
   return (
     <div className="NavBar toggle-nav-in" ref={innerRef}>
       <div className="nav-section nav-sec-1">
@@ -61,7 +66,7 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
                       className="searchfield"
                       placeholder="Search Nintendo.com"
                       size={50}
-                      autoFocus
+                      ref={searchRef}
                     />
                   </div>
                   <span
