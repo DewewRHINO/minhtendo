@@ -55,7 +55,7 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
             >
               <div className="nav-section nav-sec-1 duplicate-logo-and-input">
                 <div className="brand-box">
-                  <Link to="">
+                  <Link to="" tabIndex={-1}>
                     <img src={BrandLogo} alt="brand" />
                   </Link>
                 </div>
@@ -74,11 +74,13 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
                       ref={searchRef}
                       value={searchInput}
                       onChange={(e) => setSearchInput(e.target.value)}
+                      tabIndex={openSearch ? 0 : -1}
                     />
                   </div>
                   <span
                     className="close-search-btn"
                     onClick={() => setOpenSearch(false)}
+                    tabIndex={openSearch ? 0 : -1}
                   >
                     X
                   </span>
@@ -91,28 +93,60 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
                 <div className="quick-links">
                   <div className="suggestions">
                     <p className="suggestion-title">Suggestions</p>
-                    <Link to="" className="suggestion-link">
+                    <Link
+                      to=""
+                      className="suggestion-link"
+                      tabIndex={openSearch ? 0 : -1}
+                    >
                       <p>Nintendo Switch</p>
                     </Link>
-                    <Link to="" className="suggestion-link">
+                    <Link
+                      to=""
+                      className="suggestion-link"
+                      tabIndex={openSearch ? 0 : -1}
+                    >
                       <p>Nintendo Switch Games</p>
                     </Link>
-                    <Link to="" className="suggestion-link">
+                    <Link
+                      to=""
+                      className="suggestion-link"
+                      tabIndex={openSearch ? 0 : -1}
+                    >
                       <p>Nintendo Switch Online</p>
                     </Link>
-                    <Link to="" className="suggestion-link">
+                    <Link
+                      to=""
+                      className="suggestion-link"
+                      tabIndex={openSearch ? 0 : -1}
+                    >
                       <p>Nintendo news</p>
                     </Link>
-                    <Link to="" className="suggestion-link">
+                    <Link
+                      to=""
+                      className="suggestion-link"
+                      tabIndex={openSearch ? 0 : -1}
+                    >
                       <p>Ring Fit Adventure</p>
                     </Link>
-                    <Link to="" className="suggestion-link">
+                    <Link
+                      to=""
+                      className="suggestion-link"
+                      tabIndex={openSearch ? 0 : -1}
+                    >
                       <p>Mario games</p>
                     </Link>
-                    <Link to="" className="suggestion-link">
+                    <Link
+                      to=""
+                      className="suggestion-link"
+                      tabIndex={openSearch ? 0 : -1}
+                    >
                       <p>Zelda games</p>
                     </Link>
-                    <Link to="" className="suggestion-link">
+                    <Link
+                      to=""
+                      className="suggestion-link"
+                      tabIndex={openSearch ? 0 : -1}
+                    >
                       <p>Pokemon games</p>
                     </Link>
                   </div>
