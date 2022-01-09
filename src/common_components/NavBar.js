@@ -176,12 +176,56 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
       </div>
       <div className="nav-section nav-sec-2">
         <div className="nav-sec-2-content">
-          <Link to="/games" className="my-nav-btn">
-            <span>Games</span>
-          </Link>
-          <Link to="/hardwares" className="my-nav-btn">
-            <span>Hardware</span>
-          </Link>
+          <div className="my-nav-btn can-expand">
+            <button className="expand-nav-btn">Games</button>
+            {/* <div className="expanded-nav">
+              <div className="expdnav-content">
+                <div className="expdnav-item">
+                  <button className="expdnav-btn">❖</button>
+                  <p className="expdnav-btn-label">Shop games</p>
+                </div>
+                <div className="expdnav-item">
+                  <button className="expdnav-btn">❖</button>
+                  <p className="expdnav-btn-label">Sales and deals</p>
+                </div>
+                <div className="expdnav-item">
+                  <button className="expdnav-btn">❖</button>
+                  <p className="expdnav-btn-label">Coming soon</p>
+                </div>
+                <div className="expdnav-item">
+                  <button className="expdnav-btn">❖</button>
+                  <p className="expdnav-btn-label">Online service</p>
+                </div>
+                <div className="expdnav-item">
+                  <button className="expdnav-btn">❖</button>
+                  <p className="expdnav-btn-label">Mobile games</p>
+                </div>
+                <span className="expdnav-close-btn">X</span>
+              </div>
+            </div> */}
+          </div>
+          <div className="my-nav-btn can-expand">
+            <button className="expand-nav-btn">Hardwares</button>
+            <div className="expanded-nav">
+              <div className="expdnav-content">
+                <div className="expdnav-item">
+                  <button className="expdnav-btn" style={{ width: "240px" }}>
+                    ❖
+                  </button>
+                  <p className="expdnav-btn-label">Nintendo Switch Lineup</p>
+                </div>
+                <div className="expdnav-item">
+                  <button className="expdnav-btn">❖</button>
+                  <p className="expdnav-btn-label">Accessories</p>
+                </div>
+                <div className="expdnav-item">
+                  <button className="expdnav-btn">❖</button>
+                  <p className="expdnav-btn-label">amiibo</p>
+                </div>
+                <span className="expdnav-close-btn">X</span>
+              </div>
+            </div>
+          </div>
           <Link to="/whatsnew" className="my-nav-btn">
             <span>News & Events</span>
           </Link>

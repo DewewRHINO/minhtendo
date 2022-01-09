@@ -218,6 +218,7 @@
   flex-direction: row;
   align-items: stretch;
   justify-content: space-around;
+  position: relative;
 }
 
 .NavBar .nav-sec-2-content {
@@ -225,4 +226,83 @@
   flex-direction: row;
   align-self: center;
   gap: 1.5rem;
+}
+
+.NavBar .nav-sec-2 .can-expand .expand-nav-btn {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.NavBar .expanded-nav {
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1rem 0;
+}
+
+.NavBar .nav-sec-2 .expdnav-content {
+  position: relative;
+  color: #484848;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0 2rem;
+}
+
+.NavBar .nav-sec-2 .expdnav-item {
+  min-width: 120px;
+  cursor: pointer;
+}
+
+.NavBar .nav-sec-2 .expdnav-item:hover {
+  color: #e60012;
+}
+
+.NavBar .nav-sec-2 .expdnav-item:hover .expdnav-btn {
+  background-color: #e60012;
+  color: #fff;
+}
+
+.NavBar .nav-sec-2 .expdnav-btn {
+  outline: 0;
+  margin: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  width: 120px;
+  font-size: 3rem;
+  line-height: 3rem;
+  padding: 0.5rem 0;
+  border: 1px solid #dadada;
+  border-radius: 0.5rem;
+  background-color: #fff;
+}
+
+.NavBar .nav-sec-2 .expdnav-btn-label {
+  margin: 0.5rem 0 0 0;
+  word-wrap: break-word;
+}
+
+.NavBar .nav-sec-2 .expdnav-close-btn {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 0 0.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+}
+
+.NavBar .nav-sec-2 .expdnav-close-btn:hover {
+  cursor: pointer;
+  color: #e60012;
 }
