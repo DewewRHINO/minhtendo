@@ -12,6 +12,16 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
     openSearch || setSearchInput("");
   }, [openSearch, searchInput]);
 
+  useEffect(() => {
+    const closeExpandedNav = () => {
+      setActiveExpandedNav("");
+    };
+    document.addEventListener("scroll", closeExpandedNav);
+    return () => {
+      document.removeEventListener("scroll", closeExpandedNav);
+    };
+  }, []);
+
   return (
     <div className="NavBar toggle-nav-in" ref={innerRef}>
       <div className="nav-section nav-sec-1">
