@@ -216,16 +216,26 @@
   height: 2.5rem;
   display: flex;
   flex-direction: row;
-  align-items: stretch;
   justify-content: space-around;
+  align-items: center;
   position: relative;
 }
 
 .NavBar .nav-sec-2-content {
   display: flex;
   flex-direction: row;
-  align-self: center;
   gap: 1.5rem;
+  height: 100%;
+}
+
+.NavBar .nav-sec-2-content .my-nav-btn {
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem;
+}
+
+.NavBar .nav-sec-2-content .my-nav-btn:hover {
+  color: #e60012;
 }
 
 .NavBar .nav-sec-2 .can-expand .expand-nav-btn {

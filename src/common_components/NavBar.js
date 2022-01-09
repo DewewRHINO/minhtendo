@@ -177,13 +177,25 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
       </div>
       <div className="nav-section nav-sec-2">
         <div className="nav-sec-2-content">
-          <div className="my-nav-btn can-expand">
+          <div
+            className="my-nav-btn can-expand"
+            style={
+              activeExpandedNav === "GAMES"
+                ? { borderBottom: "2px solid #e60012" }
+                : { borderBottom: "2px solid transparent" }
+            }
+          >
             <button
               className="expand-nav-btn"
               onClick={() =>
                 activeExpandedNav === "GAMES"
                   ? setActiveExpandedNav("")
                   : setActiveExpandedNav("GAMES")
+              }
+              style={
+                activeExpandedNav === "GAMES"
+                  ? { color: "#e60012" }
+                  : { color: "inherit" }
               }
             >
               Games
@@ -221,13 +233,25 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
               </div>
             )}
           </div>
-          <div className="my-nav-btn can-expand">
+          <div
+            className="my-nav-btn can-expand"
+            style={
+              activeExpandedNav === "HARDWARES"
+                ? { borderBottom: "2px solid #e60012" }
+                : { borderBottom: "2px solid transparent" }
+            }
+          >
             <button
               className="expand-nav-btn"
               onClick={() =>
                 activeExpandedNav === "HARDWARES"
                   ? setActiveExpandedNav("")
                   : setActiveExpandedNav("HARDWARES")
+              }
+              style={
+                activeExpandedNav === "HARDWARES"
+                  ? { color: "#e60012" }
+                  : { color: "inherit" }
               }
             >
               Hardwares
@@ -259,13 +283,25 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
               </div>
             )}
           </div>
-          <Link to="/whatsnew" className="my-nav-btn">
+          <Link
+            to=""
+            className="my-nav-btn"
+            onClick={() => setActiveExpandedNav("")}
+          >
             <span>News & Events</span>
           </Link>
-          <Link to="/playnintendo" className="my-nav-btn">
+          <Link
+            to=""
+            className="my-nav-btn"
+            onClick={() => setActiveExpandedNav("")}
+          >
             <span>Play Nintendo</span>
           </Link>
-          <Link to="/holiday" className="my-nav-btn">
+          <Link
+            to=""
+            className="my-nav-btn"
+            onClick={() => setActiveExpandedNav("")}
+          >
             <span>Holiday Gifts Guide</span>
           </Link>
         </div>
