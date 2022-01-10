@@ -367,6 +367,7 @@
 }
 
 .NavBar .nav-sec-2 .can-expand .expand-nav-btn {
+  cursor: pointer;
   background: none;
   border: none;
   outline: none;
@@ -375,6 +376,7 @@
 }
 
 .NavBar .expanded-nav {
+  cursor: auto;
   position: absolute;
   top: 2.5rem;
   left: 0;
