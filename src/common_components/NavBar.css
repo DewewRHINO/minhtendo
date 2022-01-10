@@ -172,6 +172,12 @@
   transition: opacity 0.3s ease-in-out 0.2s;
 }
 
+.NavBar .quick-links {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
 .NavBar .suggestions {
   display: flex;
   flex-direction: column;
@@ -181,9 +187,12 @@
   margin: 0 1.5rem;
 }
 
-.NavBar .suggestion-title {
+.NavBar .suggestion-title,
+.NavBar .link-cards-title {
   font-weight: 600;
+  font-size: 0.9rem;
   margin-bottom: 0.5rem;
+  text-align: left;
 }
 
 .NavBar .suggestion-link {
@@ -194,6 +203,122 @@
 
 .NavBar .suggestion-link p {
   margin: 0;
+}
+
+.NavBar .link-cards {
+  padding: 1rem 0;
+  margin: 0 1.5rem;
+}
+
+.NavBar .link-cards .link-tiles {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 1rem;
+  margin-right: 1rem;
+}
+
+.NavBar .link-cards .tile {
+  /* WIDTH = 2 times max width of longest word (Nintendo = 8 words) */
+  max-width: calc(8rem * 2);
+  /* HEIGHT = max 3 lines of 1.25 rem text, 120% line-height each line and 2 rem padding of the tile */
+  height: calc(3.75rem + (3.75rem * 1.2) + 2rem);
+  border-radius: 0.3rem;
+  padding: 2rem 0;
+  color: #484848;
+  font-weight: 600;
+  z-index: 10002;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 1 0px;
+}
+
+.NavBar .link-cards .yellow-tile {
+  background-color: #fed400;
+  border: 1px solid #fed400;
+}
+.NavBar .link-cards .yellow-tile:hover {
+  cursor: pointer;
+  box-shadow: 0px 1px 1px 0.1px #fed400, 0px -1px 1px 0.1px #fed400,
+    1px 0px 1px 0.1px #fed400, -1px 0px 1px 0.1px #fed400;
+}
+.NavBar .link-cards .yellow-tile:hover .tile-name {
+  filter: brightness(98%);
+  text-decoration: underline;
+  text-decoration-color: #fed400;
+}
+.NavBar .link-cards .yellow-tile .tile-icon {
+  border: 1px solid #fed400;
+}
+
+.NavBar .link-cards .blue-tile {
+  background-color: #00b0ec;
+  border: 1px solid #00b0ec;
+}
+.NavBar .link-cards .blue-tile:hover {
+  cursor: pointer;
+  box-shadow: 0px 1px 1px 0.1px #00b0ec, 0px -1px 1px 0.1px #00b0ec,
+    1px 0px 1px 0.1px #00b0ec, -1px 0px 1px 0.1px #00b0ec;
+}
+.NavBar .link-cards .blue-tile:hover .tile-name {
+  filter: brightness(98%);
+  text-decoration: underline;
+  text-decoration-color: #00b0ec;
+}
+.NavBar .link-cards .blue-tile .tile-icon {
+  border: 1px solid #00b0ec;
+}
+
+.NavBar .link-cards .red-tile {
+  background-color: #e60012;
+  border: 1px solid #e60012;
+}
+.NavBar .link-cards .red-tile:hover {
+  cursor: pointer;
+  box-shadow: 0px 1px 1px 0.1px #e60012, 0px -1px 1px 0.1px #e60012,
+    1px 0px 1px 0.1px #e60012, -1px 0px 1px 0.1px #e60012;
+}
+.NavBar .link-cards .red-tile:hover .tile-name {
+  filter: brightness(98%);
+  text-decoration: underline;
+  text-decoration-color: #e60012;
+}
+.NavBar .link-cards .red-tile .tile-icon {
+  border: 1px solid #e60012;
+}
+
+.NavBar .link-cards .tile-name {
+  position: relative;
+  font-size: 1.25rem;
+  background-color: #fff;
+  padding: 2rem 3rem;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.NavBar .link-cards .tile-icon {
+  background-color: #fff;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 50%;
+  font-weight: 600;
+  transform: translateY(-50%);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
 }
 
 .NavBar .my-nav-btn {

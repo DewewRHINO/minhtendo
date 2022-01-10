@@ -161,7 +161,35 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
                       <p>Pokemon games</p>
                     </Link>
                   </div>
-                  <div className="link-cards"></div>
+                  <div className="link-cards">
+                    <p className="link-cards-title">Find your next game</p>
+                    <div className="link-tiles">
+                      <div className="tile yellow-tile">
+                        <div className="tile-name">
+                          <div className="tile-icon">
+                            <span>✓</span>
+                          </div>
+                          Games on sale
+                        </div>
+                      </div>
+                      <div className="tile blue-tile">
+                        <div className="tile-name">
+                          <div className="tile-icon">
+                            <span>✓</span>
+                          </div>
+                          New games
+                        </div>
+                      </div>
+                      <div className="tile red-tile">
+                        <div className="tile-name">
+                          <div className="tile-icon">
+                            <span>✓</span>
+                          </div>
+                          Nintendo Switch games
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
