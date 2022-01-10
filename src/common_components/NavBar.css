@@ -46,9 +46,7 @@
 
 .NavBar .brand-box img {
   height: 55px;
-  width: 100%;
-  max-width: 100%;
-  max-height: 100%;
+  min-width: 100%;
 }
 
 .NavBar .search-box {
@@ -170,12 +168,14 @@
   padding-left: 200px;
   opacity: 0;
   transition: opacity 0.3s ease-in-out 0.2s;
+  max-height: 50vh;
+  /* width: 100%; */
+  overflow-y: auto;
 }
 
 .NavBar .quick-links {
   display: flex;
   align-items: flex-start;
-  flex-wrap: wrap;
 }
 
 .NavBar .suggestions {
@@ -185,6 +185,7 @@
   font-size: 0.9rem;
   padding: 1rem 0;
   margin: 0 1.5rem;
+  min-width: 7rem;
 }
 
 .NavBar .suggestion-title,
@@ -219,12 +220,10 @@
 }
 
 .NavBar .link-cards .tile {
-  /* WIDTH = 2 times max width of longest word (Nintendo = 8 words) */
-  max-width: calc(8rem * 2);
-  /* HEIGHT = max 3 lines of 1.25 rem text, 120% line-height each line and 2 rem padding of the tile */
+  /* HEIGHT = max 3 lines of 1.25 rem text, 120% line-height each line and 3 rem padding of the tile */
   height: calc(3.75rem + (3.75rem * 1.2) + 2rem);
   border-radius: 0.3rem;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   color: #484848;
   font-weight: 600;
   z-index: 10002;
@@ -293,7 +292,7 @@
   position: relative;
   font-size: 1.25rem;
   background-color: #fff;
-  padding: 2rem 3rem;
+  padding: 1rem 3rem;
   height: 100%;
   z-index: 1;
   display: flex;
