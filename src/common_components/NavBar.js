@@ -270,17 +270,30 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
               <div className="expanded-nav">
                 <div className="expdnav-content">
                   <div className="expdnav-item">
-                    <button className="expdnav-btn" style={{ width: "240px" }}>
-                      ❖
+                    <button className="expdnav-btn switch-img-btn">
+                      <img
+                        src="https://assets.nintendo.com/image/upload/q_auto,f_auto,w_240/Nclood/nav/switch-lineup"
+                        alt="Switch Lineup"
+                      />
                     </button>
                     <p className="expdnav-btn-label">Nintendo Switch Lineup</p>
                   </div>
                   <div className="expdnav-item">
-                    <button className="expdnav-btn">❖</button>
+                    <button className="expdnav-btn accs-img-btn">
+                      <img
+                        src="https://assets.nintendo.com/image/upload/q_auto,f_auto,w_104/Nclood/nav/accessories"
+                        alt="Accessories"
+                      />
+                    </button>
                     <p className="expdnav-btn-label">Accessories</p>
                   </div>
                   <div className="expdnav-item">
-                    <button className="expdnav-btn">❖</button>
+                    <button className="expdnav-btn amiibo-img-btn">
+                      <img
+                        src="https://assets.nintendo.com/image/upload/q_auto,f_auto,w_104/Nclood/nav/amiibo"
+                        alt="amiibo"
+                      />
+                    </button>
                     <p className="expdnav-btn-label">amiibo</p>
                   </div>
                   <span

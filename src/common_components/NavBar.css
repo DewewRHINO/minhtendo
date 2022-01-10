@@ -296,6 +296,38 @@
   background-color: #fff;
 }
 
+.NavBar .nav-sec-2 .switch-img-btn {
+  padding: 0;
+  /* calc total width of image together with padding */
+  width: calc(240px + 1rem);
+  /* same height as icon buttons with total border 2px */
+  height: calc(4rem + 2px);
+}
+
+.NavBar .nav-sec-2 .accs-img-btn {
+  padding: 0;
+  /* calc total width of image together with padding */
+  width: calc(104px + 1rem);
+  /* same height as icon buttons with total border 2px */
+  height: calc(4rem + 2px);
+}
+
+.NavBar .nav-sec-2 .amiibo-img-btn {
+  padding: 0;
+  /* calc total width of image together with padding */
+  width: calc(104px + 1rem);
+  /* same height as icon buttons with total border 2px */
+  height: calc(4rem + 2px);
+}
+
+.NavBar .nav-sec-2 .expdnav-btn img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  padding: 0.5rem 1rem;
+  object-fit: contain;
+}
+
 .NavBar .nav-sec-2 .expdnav-btn-label {
   margin: 0.5rem 0 0 0;
   word-wrap: break-word;
