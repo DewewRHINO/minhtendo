@@ -362,13 +362,16 @@
   color: #e60012;
 }
 
+.NavBar .nav-sec-2 .can-expand {
+  cursor: pointer;
+}
+
 .NavBar .nav-sec-2 .can-expand .expand-nav-btn {
   background: none;
   border: none;
   outline: none;
   padding: 0;
   font-weight: 600;
-  cursor: pointer;
 }
 
 .NavBar .expanded-nav {
