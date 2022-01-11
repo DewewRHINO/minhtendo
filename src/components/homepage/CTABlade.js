@@ -1,6 +1,8 @@
 import React from "react";
 import "./CTABlade.css";
 import SwitchShadow from "../../media/Game_Store_Switch_Games.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 // PARAMETERS
 // String imgUrl, imgAlt, bladeDesc, bladeText, buttonUrl, bladeBgColor, bladeTextColor
@@ -33,7 +35,11 @@ export const CTABlade = ({
         </div>
         <div className="cta-btn-container">
           <span className="action-button cta-btn">
-            {buttonText ? buttonText + " >" : "More >"}
+            {buttonText ? buttonText : "More"}
+            <FontAwesomeIcon
+              icon={faAngleRight}
+              className="action-button-icon"
+            />
           </span>
         </div>
       </div>

@@ -9,14 +9,25 @@ input::placeholder {
 }
 
 .App .action-button {
-  display: inline-block;
-  padding: 1rem 1.2rem;
+  border: 0;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
   border-radius: 0.4rem;
   white-space: nowrap;
   word-wrap: break-word;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 650;
+  height: 4rem;
+  width: auto;
+  padding: 0 1rem;
 }
 .App .action-button:hover {
   cursor: pointer;
+}
+
+.App .action-button .action-button-icon {
+  height: 100%;
+  width: 1.2rem;
+  margin-left: 0.5rem;
 }

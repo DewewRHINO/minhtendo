@@ -1,6 +1,8 @@
 import React from "react";
 import "./CenterStage.css";
 import BigBrainAcademy from "../../media/BigBrainAcademy-BrainvsBrain_v01.avif";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 export const CenterStage = () => {
   return (
@@ -10,7 +12,10 @@ export const CenterStage = () => {
       </div>
       <div className="cstage-tail">
         <span className="avai-now">Available Now</span>
-        <span className="action-button learn-more">Learn more {">"}</span>
+        <button className="action-button learn-more">
+          Learn more
+          <FontAwesomeIcon icon={faAngleRight} className="action-button-icon" />
+        </button>
         <div className="age-badge-container">
           <img
             className="age-badge"

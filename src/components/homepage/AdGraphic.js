@@ -1,6 +1,8 @@
 import React from "react";
 import "./AdGraphic.css";
 import GamingSystemGraphic from "../../media/ExploreGamingSystems.jfif";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 export const AdGraphic = () => {
   return (
@@ -13,7 +15,8 @@ export const AdGraphic = () => {
           Nintendo Switch family - Three ways to play
         </span>
         <span className="action-button red-btn">
-          Starting at $199.99 {" >"}
+          Starting at $199.99
+          <FontAwesomeIcon icon={faAngleRight} className="action-button-icon" />
         </span>
       </div>
     </div>
