@@ -93,12 +93,13 @@
   border-bottom: 2px solid #e60012;
 }
 
-.CardSlider .game-card .card-tail .fav-btn {
-  font-size: 2rem;
+.CardSlider .game-card .card-tail .wishlist-btn {
+  font-size: 1.5rem;
+  stroke-width: 10px;
   color: #e60012;
 }
 
-.CardSlider .game-card .card-tail .fav-btn:hover {
+.CardSlider .game-card .card-tail .wishlist-btn:hover {
   cursor: pointer;
   color: #ac000d;
 }

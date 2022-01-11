@@ -4,6 +4,7 @@ import { toMMDDYY } from "../../util/conversions";
 import "./CardSlider.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
+import { faHeart } from "@fortawesome/free-regular-svg-icons";
 
 // PARAMETERS
 // Array data
@@ -73,7 +74,11 @@ export const CardSlider = ({
               )}
               <div className="card-tail">
                 <span className="game-platform">{game.gamePlatform}</span>
-                {hasFavButton === true && <span className="fav-btn">♡</span>}
+                {hasFavButton === true && (
+                  <span className="wishlist-btn">
+                    <FontAwesomeIcon icon={faHeart} className="wishlist-icon" />
+                  </span>
+                )}
               </div>
             </div>
           ))}
