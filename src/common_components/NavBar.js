@@ -10,6 +10,12 @@ import {
   faHeart,
   faUser,
   faAngleDown,
+  faGamepad,
+  faMouse,
+  faCalendarAlt,
+  faTag,
+  faMobile,
+  faTools,
 } from "@fortawesome/free-solid-svg-icons";
 
 export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
@@ -257,6 +263,7 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
                   : { color: "inherit" }
               }
             >
+              <FontAwesomeIcon icon={faGamepad} className="prefix-icon" />
               Games
               <FontAwesomeIcon
                 icon={faAngleDown}
@@ -268,30 +275,58 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
               <div className="expanded-nav">
                 <div className="expdnav-content">
                   <div className="expdnav-item">
-                    <button className="expdnav-btn">❖</button>
+                    <button className="expdnav-btn">
+                      <FontAwesomeIcon
+                        icon={faGamepad}
+                        className="expdnav-btn-icon"
+                      />
+                    </button>
                     <p className="expdnav-btn-label">Shop games</p>
                   </div>
                   <div className="expdnav-item">
-                    <button className="expdnav-btn">❖</button>
+                    <button className="expdnav-btn">
+                      <FontAwesomeIcon
+                        icon={faTag}
+                        className="expdnav-btn-icon"
+                      />
+                    </button>
                     <p className="expdnav-btn-label">Sales and deals</p>
                   </div>
                   <div className="expdnav-item">
-                    <button className="expdnav-btn">❖</button>
+                    <button className="expdnav-btn">
+                      <FontAwesomeIcon
+                        icon={faCalendarAlt}
+                        className="expdnav-btn-icon"
+                      />
+                    </button>
                     <p className="expdnav-btn-label">Coming soon</p>
                   </div>
                   <div className="expdnav-item">
-                    <button className="expdnav-btn">❖</button>
+                    <button className="expdnav-btn">
+                      <FontAwesomeIcon
+                        icon={faTools}
+                        className="expdnav-btn-icon"
+                      />
+                    </button>
                     <p className="expdnav-btn-label">Online service</p>
                   </div>
                   <div className="expdnav-item">
-                    <button className="expdnav-btn">❖</button>
+                    <button className="expdnav-btn">
+                      <FontAwesomeIcon
+                        icon={faMobile}
+                        className="expdnav-btn-icon"
+                      />
+                    </button>
                     <p className="expdnav-btn-label">Mobile games</p>
                   </div>
                   <span
                     className="expdnav-close-btn"
                     onClick={() => setActiveExpandedNav("")}
                   >
-                    X
+                    <FontAwesomeIcon
+                      icon={faTimes}
+                      className="expdnav-close-btn-icon"
+                    />
                   </span>
                 </div>
               </div>
@@ -318,6 +353,7 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
                   : { color: "inherit" }
               }
             >
+              <FontAwesomeIcon icon={faMouse} className="prefix-icon" />
               Hardwares
               <FontAwesomeIcon
                 icon={faAngleDown}
@@ -359,7 +395,10 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
                     className="expdnav-close-btn"
                     onClick={() => setActiveExpandedNav("")}
                   >
-                    X
+                    <FontAwesomeIcon
+                      icon={faTimes}
+                      className="expdnav-close-btn-icon"
+                    />
                   </span>
                 </div>
               </div>

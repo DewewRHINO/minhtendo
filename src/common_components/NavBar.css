@@ -400,9 +400,13 @@
 }
 
 .NavBar .nav-sec-2 .nav-sec-2-btn-icon {
-  margin-left: 0.5rem;
-  width: 0.9rem;
-  height: auto;
+  margin: 0 0 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.NavBar .nav-sec-2 .prefix-icon {
+  margin: 0 0.5rem 0 0;
+  font-size: 1.5rem;
 }
 
 .NavBar .expanded-nav {
@@ -428,14 +432,17 @@
 .NavBar .nav-sec-2 .expdnav-item {
   min-width: 120px;
   cursor: pointer;
+  color: inherit;
 }
 
 .NavBar .nav-sec-2 .expdnav-item:hover {
   color: #e60012;
 }
-
 .NavBar .nav-sec-2 .expdnav-item:hover .expdnav-btn {
   background-color: #e60012;
+  color: #e60012;
+}
+.NavBar .nav-sec-2 .expdnav-item:hover .expdnav-btn-icon {
   color: #fff;
 }
 
@@ -447,12 +454,16 @@
   align-items: baseline;
   justify-content: center;
   width: 120px;
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 3rem;
-  padding: 0.5rem 0;
+  padding: 0.75rem 0;
   border: 1px solid #dadada;
   border-radius: 0.5rem;
   background-color: #fff;
+}
+
+.NavBar .nav-sec-2 .expdnav-btn-icon {
+  color: #484848;
 }
 
 .NavBar .nav-sec-2 .switch-img-btn {
@@ -496,7 +507,7 @@
   cursor: pointer;
   font-weight: 500;
   font-size: 1.5rem;
-  padding: 0 0.5rem;
+  line-height: 1.5rem;
   position: absolute;
   top: 0;
   right: 0;
