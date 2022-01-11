@@ -3,7 +3,7 @@ import "./NavBar.css";
 import { Link } from "react-router-dom";
 import BrandLogo from "../media/landscape-logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faSearch, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
   const [searchInput, setSearchInput] = useState("");
@@ -98,7 +98,10 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
                     onClick={() => setOpenSearch(false)}
                     tabIndex={openSearch ? 0 : -1}
                   >
-                    X
+                    <FontAwesomeIcon
+                      icon={faTimes}
+                      className="close-search-icon"
+                    />
                   </span>
                 </div>
               </div>
