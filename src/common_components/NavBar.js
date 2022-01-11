@@ -3,7 +3,14 @@ import "./NavBar.css";
 import { Link } from "react-router-dom";
 import BrandLogo from "../media/landscape-logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch, faTimes } from "@fortawesome/free-solid-svg-icons";
+import {
+  faSearch,
+  faTimes,
+  faQuestionCircle,
+  faHeart,
+  faUser,
+  faAngleDown,
+} from "@fortawesome/free-solid-svg-icons";
 
 export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
   const [searchInput, setSearchInput] = useState("");
@@ -206,17 +213,23 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
         <div className="nav-buttons">
           <div className="nav-btn-box">
             <Link to="/" className="my-nav-btn">
-              <span>⚫ Support</span>
+              <FontAwesomeIcon
+                icon={faQuestionCircle}
+                className="nav-btn-icon"
+              />
+              Support
             </Link>
           </div>
           <div className="nav-btn-box">
             <Link to="/" className="my-nav-btn">
-              <span>⚫ Wish List</span>
+              <FontAwesomeIcon icon={faHeart} className="nav-btn-icon" />
+              Wish List
             </Link>
           </div>
           <div className="nav-btn-box">
             <Link to="/" className="my-nav-btn">
-              <span>⚫ Login / Signup</span>
+              <FontAwesomeIcon icon={faUser} className="nav-btn-icon" />
+              Login / Signup
             </Link>
           </div>
         </div>
@@ -245,6 +258,11 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
               }
             >
               Games
+              <FontAwesomeIcon
+                icon={faAngleDown}
+                className="nav-sec-2-btn-icon"
+                flip={activeExpandedNav === "GAMES" && "vertical"}
+              />
             </button>
             {activeExpandedNav === "GAMES" && (
               <div className="expanded-nav">
@@ -301,6 +319,11 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
               }
             >
               Hardwares
+              <FontAwesomeIcon
+                icon={faAngleDown}
+                className="nav-sec-2-btn-icon"
+                flip={activeExpandedNav === "HARDWARES" && "vertical"}
+              />
             </button>
             {activeExpandedNav === "HARDWARES" && (
               <div className="expanded-nav">

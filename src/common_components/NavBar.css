@@ -329,12 +329,23 @@
   z-index: 2;
 }
 
+.NavBar .nav-btn-box {
+  height: 100%;
+}
+
 .NavBar .my-nav-btn {
   text-decoration: none;
   color: #000;
   font-weight: 600;
   font-size: 0.9rem;
-  align-self: stretch;
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 0.25rem;
+}
+
+.NavBar .my-nav-btn:hover {
+  color: #e60012;
 }
 
 .NavBar .nav-buttons {
@@ -343,6 +354,12 @@
   flex-wrap: nowrap;
   align-items: center;
   gap: 1rem;
+}
+
+.NavBar .nav-btn-icon {
+  height: 100%;
+  width: 1.2rem;
+  margin-right: 0.5rem;
 }
 
 .NavBar .nav-sec-2 {
@@ -361,16 +378,6 @@
   height: 100%;
 }
 
-.NavBar .nav-sec-2-content .my-nav-btn {
-  display: flex;
-  align-items: center;
-  padding: 0 0.5rem;
-}
-
-.NavBar .nav-sec-2-content .my-nav-btn:hover {
-  color: #e60012;
-}
-
 .NavBar .nav-sec-2 .can-expand {
   cursor: pointer;
 }
@@ -382,6 +389,15 @@
   outline: none;
   padding: 0;
   font-weight: 600;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.NavBar .nav-sec-2 .nav-sec-2-btn-icon {
+  margin-left: 0.5rem;
+  width: 0.9rem;
+  height: auto;
 }
 
 .NavBar .expanded-nav {
