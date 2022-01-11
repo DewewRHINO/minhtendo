@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { toMMDDYY } from "../../util/conversions";
 import "./CardSlider.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleRight, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 
 // PARAMETERS
 // Array data
@@ -83,14 +85,14 @@ export const CardSlider = ({
             className="prev-btn"
             onClick={(e) => handleScrollTiles(e, "prev")}
           >
-            {"<"}
+            <FontAwesomeIcon icon={faAngleLeft} className="control-icon" />
           </button>
         )}
         <button
           className="next-btn"
           onClick={(e) => handleScrollTiles(e, "next")}
         >
-          {">"}
+          <FontAwesomeIcon icon={faAngleRight} className="control-icon" />
         </button>
       </div>
     </div>
