@@ -285,7 +285,7 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
               <FontAwesomeIcon
                 icon={faAngleDown}
                 className="nav-sec-2-btn-icon"
-                flip={activeExpandedNav === "GAMES" && "vertical"}
+                flip={activeExpandedNav === "GAMES" ? "vertical" : "horizontal"}
               />
             </button>
             {activeExpandedNav === "GAMES" && (
@@ -375,7 +375,9 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
               <FontAwesomeIcon
                 icon={faAngleDown}
                 className="nav-sec-2-btn-icon"
-                flip={activeExpandedNav === "HARDWARES" && "vertical"}
+                flip={
+                  activeExpandedNav === "HARDWARES" ? "vertical" : "horizontal"
+                }
               />
             </button>
             {activeExpandedNav === "HARDWARES" && (
