@@ -2,6 +2,8 @@ import React from "react";
 import "./LatestNews.css";
 import { toMMDDYY } from "../../util/conversions";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleRight, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 
 export const LatestNews = ({ data }) => {
   const allNews = [...data];
@@ -30,10 +32,13 @@ export const LatestNews = ({ data }) => {
             <p className="card-date">{news.date}</p>
             <p className="card-title">{news.postTitle}</p>
             <p className="card-desc">{news.postIntro}</p>
-            <div className="read-more-btn">
-              <span className="btn-text">Read more</span>
-              <span className="btn-icon">{" >"}</span>
-            </div>
+            <button className="action-button read-more-btn">
+              Read more
+              <FontAwesomeIcon
+                icon={faAngleRight}
+                className="action-button-icon"
+              />
+            </button>
           </div>
         ))}
       </div>
@@ -47,16 +52,20 @@ export const LatestNews = ({ data }) => {
             </Link>
             <p className="card-date">{news.date}</p>
             <p className="card-title">{news.postTitle}</p>
-            <div className="read-more-btn">
-              <span className="btn-text">Read more</span>
-              <span className="btn-icon">{" >"}</span>
-            </div>
+            <button className="action-button read-more-btn">
+              Read more
+              <FontAwesomeIcon
+                icon={faAngleRight}
+                className="action-button-icon"
+              />
+            </button>
           </div>
         ))}
       </div>
-      <span className="action-button see-all-btn">
-        See all news articles{" >"}
-      </span>
+      <button className="action-button see-all-btn">
+        See all news articles
+        <FontAwesomeIcon icon={faAngleRight} className="action-button-icon" />
+      </button>
     </div>
   );
 };

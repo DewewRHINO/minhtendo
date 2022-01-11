@@ -11,6 +11,7 @@ input::placeholder {
 .App .action-button {
   border: 0;
   outline: none;
+  background: none;
   display: inline-flex;
   align-items: center;
   border-radius: 0.4rem;

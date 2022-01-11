@@ -49,26 +49,26 @@
 }
 
 .LatestNews .read-more-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 1.1rem;
+  position: relative;
+  height: auto;
+  font-size: 1rem;
   font-weight: 650;
   color: #e60012;
-}
-
-.LatestNews .read-more-btn .btn-text,
-.LatestNews .read-more-btn .btn-icon {
-  border-bottom: 2px solid transparent;
+  padding: 0 0 0.2rem 0;
+  border-bottom: 0.2rem solid transparent;
+  border-radius: 0;
 }
 
 .LatestNews .read-more-btn:hover {
   cursor: pointer;
   color: #ac000d;
+  border-bottom-color: #ac000d;
 }
 
-.LatestNews .read-more-btn:hover .btn-text {
-  border-bottom-color: #ac000d;
+.LatestNews .read-more-btn .action-button-icon {
+  width: 0.8rem;
+  position: absolute;
+  right: calc(-0.8rem - 0.5rem);
 }
 
 .LatestNews .see-all-btn {
