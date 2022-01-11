@@ -12,6 +12,8 @@ import {
   faAngleDown,
   faGamepad,
   faMouse,
+  faNewspaper,
+  faStar,
   faCalendarAlt,
   faTag,
   faMobile,
@@ -424,14 +426,16 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
             className="my-nav-btn"
             onClick={() => setActiveExpandedNav("")}
           >
-            <span>News & Events</span>
+            <FontAwesomeIcon icon={faNewspaper} className="prefix-icon" />
+            News & Events
           </Link>
           <Link
             to=""
             className="my-nav-btn"
             onClick={() => setActiveExpandedNav("")}
           >
-            <span>Play Nintendo</span>
+            <FontAwesomeIcon icon={faStar} className="prefix-icon" />
+            Play Nintendo
           </Link>
           <Link
             to=""
