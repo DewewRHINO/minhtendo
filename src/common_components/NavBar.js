@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState } from "react";
 import "./NavBar.css";
 import { Link } from "react-router-dom";
 import BrandLogo from "../media/landscape-logo.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
   const [searchInput, setSearchInput] = useState("");
@@ -36,7 +38,7 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
             onClick={() => setOpenSearch(true)}
           >
             <label htmlFor="searchfield" className="searchlabel">
-              &#128269;
+              <FontAwesomeIcon icon={faSearch} className="search-icon" />
             </label>
             <input
               className="searchfield"
@@ -76,7 +78,10 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
                 >
                   <div className="search-box-content">
                     <label htmlFor="searchfield" className="searchlabel">
-                      &#128269;
+                      <FontAwesomeIcon
+                        icon={faSearch}
+                        className="search-icon"
+                      />
                     </label>
                     <input
                       className="searchfield"

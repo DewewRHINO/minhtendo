@@ -96,9 +96,14 @@
 }
 
 .NavBar .searchlabel {
-  font-size: 1rem;
   margin: 0;
   margin-right: 0.5rem;
+  height: 100%;
+}
+
+.NavBar .search-icon {
+  height: 100%;
+  width: 1.2rem;
 }
 
 .NavBar .searchfield {
