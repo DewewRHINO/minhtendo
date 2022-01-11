@@ -3,7 +3,7 @@ import "./LatestNews.css";
 import { toMMDDYY } from "../../util/conversions";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleRight, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
+import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 export const LatestNews = ({ data }) => {
   const allNews = [...data];

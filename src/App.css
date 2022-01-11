@@ -14,6 +14,7 @@ input::placeholder {
   background: none;
   display: inline-flex;
   align-items: center;
+  gap: 0.5rem;
   border-radius: 0.4rem;
   white-space: nowrap;
   word-wrap: break-word;
@@ -28,7 +29,6 @@ input::placeholder {
 }
 
 .App .action-button .action-button-icon {
-  height: 100%;
+  height: auto;
   width: 1.2rem;
-  margin-left: 0.5rem;
 }

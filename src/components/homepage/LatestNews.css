@@ -66,9 +66,12 @@
 }
 
 .LatestNews .read-more-btn .action-button-icon {
-  width: 0.8rem;
+  padding-left: 0.5rem;
+  /* icon size after scaling down due to padding */
+  width: calc(0.5rem + 0.8rem);
   position: absolute;
-  right: calc(-0.8rem - 0.5rem);
+  /* offset full width to the right of the button */
+  right: calc(-0.5rem - 0.8rem);
 }
 
 .LatestNews .see-all-btn {
