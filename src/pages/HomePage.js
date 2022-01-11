@@ -45,9 +45,9 @@ export const HomePage = () => {
       <SectionHeader heading="Best-selling games" fontSize="2rem" />
       <CardSlider
         data={bestseller_games}
-        displayDate
-        displayPrice
-        hasFavButton
+        showDate
+        showPrice
+        showWishlistButton
       />
       <hr className="section-separator" />
       <SectionHeader heading="News" />
@@ -56,9 +56,9 @@ export const HomePage = () => {
       <SectionHeader heading="Nintendo Switch new releases" fontSize="2rem" />
       <CardSlider
         data={bestseller_games}
-        displayDate
-        displayPrice
-        hasFavButton
+        showDate
+        showPrice
+        showWishlistButton
       />
     </div>
   );

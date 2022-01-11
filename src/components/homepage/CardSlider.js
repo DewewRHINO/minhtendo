@@ -8,12 +8,12 @@ import { faHeart } from "@fortawesome/free-regular-svg-icons";
 
 // PARAMETERS
 // Array data
-// Boolean displayDate, displayPrice, hasFavButton
+// Boolean showDate, showPrice, showWishlistButton
 export const CardSlider = ({
   data,
-  displayDate,
-  displayPrice,
-  hasFavButton,
+  showDate,
+  showPrice,
+  showWishlistButton,
 }) => {
   const [lastScrollPos, setLastScrollPos] = useState(0);
   const [showPrevScrollBtn, setShowPrevScrollBtn] = useState(false);
@@ -67,14 +67,14 @@ export const CardSlider = ({
                   <img src={game.gameImg} alt={game.gameImgAlt} />
                 </div>
               </Link>
-              {displayDate === true && <p className="card-date">{game.date}</p>}
+              {showDate === true && <p className="card-date">{game.date}</p>}
               <p className="game-name card-title">{game.gameName}</p>
-              {displayPrice === true && (
+              {showPrice === true && (
                 <p className="game-price card-title">{game.gameCurrentPrice}</p>
               )}
               <div className="card-tail">
                 <span className="game-platform">{game.gamePlatform}</span>
-                {hasFavButton === true && (
+                {showWishlistButton === true && (
                   <span className="wishlist-btn">
                     <FontAwesomeIcon icon={faHeart} className="wishlist-icon" />
                   </span>
