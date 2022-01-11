@@ -80,7 +80,8 @@
   border-bottom: 1px solid #e60012;
 }
 
-.NavBar .search-box-content:hover .searchfield::placeholder {
+.NavBar .search-box-content:hover .searchfield::placeholder,
+.NavBar .search-box-content:hover .search-icon {
   color: #e60012;
 }
 
@@ -104,6 +105,10 @@
 .NavBar .search-icon {
   height: 100%;
   width: 1.2rem;
+}
+
+.NavBar .duplicate-logo-and-input .search-icon {
+  color: #e60012;
 }
 
 .NavBar .searchfield {
