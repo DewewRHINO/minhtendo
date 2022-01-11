@@ -188,7 +188,12 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
                       <div className="tile yellow-tile">
                         <div className="tile-name">
                           <div className="tile-icon">
-                            <span>✓</span>
+                            <span>
+                              <FontAwesomeIcon
+                                icon={faTag}
+                                className="suggestion-tile-icon"
+                              />
+                            </span>
                           </div>
                           Games on sale
                         </div>
@@ -196,7 +201,12 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
                       <div className="tile blue-tile">
                         <div className="tile-name">
                           <div className="tile-icon">
-                            <span>✓</span>
+                            <span>
+                              <FontAwesomeIcon
+                                icon={faCalendarAlt}
+                                className="suggestion-tile-icon"
+                              />
+                            </span>
                           </div>
                           New games
                         </div>
@@ -204,7 +214,12 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
                       <div className="tile red-tile">
                         <div className="tile-name">
                           <div className="tile-icon">
-                            <span>✓</span>
+                            <span>
+                              <FontAwesomeIcon
+                                icon={faGamepad}
+                                className="suggestion-tile-icon"
+                              />
+                            </span>
                           </div>
                           Nintendo Switch games
                         </div>

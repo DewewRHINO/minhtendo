@@ -234,10 +234,10 @@
 }
 
 .NavBar .link-cards .tile {
-  /* HEIGHT = max 3 lines of 1.25 rem text, 120% line-height each line and 3 rem padding of the tile */
-  height: calc(3.75rem + (3.75rem * 1.2) + 2rem);
+  /* HEIGHT = max 3 lines of text, 120% line-height each line and padding of the tile */
+  height: calc((1.25rem * 3) + (3.75rem * 1.2) + 1.6rem);
   border-radius: 0.3rem;
-  padding: 1.5rem 0;
+  padding: 1.6rem 0;
   color: #484848;
   font-weight: 600;
   z-index: 10002;
@@ -316,13 +316,14 @@
 
 .NavBar .link-cards .tile-icon {
   background-color: #fff;
-  width: 2rem;
-  height: 2rem;
-  font-size: 1.8rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.25rem;
   line-height: 1.8rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
   border: 1px solid black;
   border-radius: 50%;
   font-weight: 600;
