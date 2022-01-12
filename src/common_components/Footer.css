@@ -12,9 +12,9 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.5rem;
-  width: 23rem;
-  /* background-color: rgb(36, 27, 0); */
+  width: 22rem;
   justify-content: center;
+  gap: 1rem;
   align-items: center;
 }
 
@@ -24,9 +24,9 @@
 }
 
 .Footer .social-actions {
-  /* background-color: rgb(0, 37, 70); */
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .Footer .social-action {
@@ -37,7 +37,8 @@
 .Footer .grouped-socialmedia {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  gap: 0.5rem;
   align-items: center;
   margin-top: 0.8rem;
 }
@@ -45,11 +46,10 @@
 .Footer .social-media-link {
   width: 3rem;
   height: 3rem;
-  line-height: 3rem;
   border-radius: 0.3rem;
   text-decoration: none;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .Footer .social-media-link.to-facebook {
   background-color: #1878f2;
@@ -66,6 +66,7 @@
 
 .Footer .badge-container {
   margin: 0.5rem;
+  cursor: auto;
 }
 
 .Footer .privacy-badge-img {
