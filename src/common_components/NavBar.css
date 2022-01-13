@@ -6,7 +6,6 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #fff;
   z-index: 10000;
   transform: translateY(-100%);
   transition: transform 0.5s ease-in 0.2s;
@@ -373,6 +372,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  background-color: #fff;
   position: relative;
 }
 
@@ -382,7 +382,6 @@
   align-items: center;
   gap: 1.5rem;
   height: auto;
-  background-color: rgb(255, 255, 255);
 }
 
 .NavBar .nav-sec-2-content .my-nav-btn {
@@ -531,6 +530,55 @@
   .NavBar .nav-sec-2-content {
     flex-direction: column;
     align-items: stretch;
+    gap: 0;
+  }
+
+  .NavBar .nav-sec-2 {
+    height: calc(100vh - 55px);
+    width: 90%;
+    margin-left: auto;
     background-color: #f4f4f4;
+    justify-content: flex-start;
+    position: static;
+  }
+
+  .NavBar .nav-sec-2 .my-nav-btn {
+    padding: 1rem;
+  }
+
+  .NavBar .nav-sec-2 .can-expand {
+    flex-direction: column;
+  }
+
+  .NavBar .nav-sec-2 .can-expand .expand-nav-btn {
+    width: 100%;
+    justify-content: flex-start;
+    z-index: 1;
+  }
+
+  .NavBar .nav-sec-2 .expand-nav-btn-label {
+    flex: 1 1 0px;
+    text-align: left;
+  }
+
+  .NavBar .nav-sec-2 .prefix-icon {
+    width: 2rem;
+    text-align: right;
+  }
+
+  .NavBar .event-based-nav-btn span {
+    padding-left: 2.5rem;
+  }
+
+  .NavBar .nav-sec-2 .expanded-nav {
+    position: relative;
+    top: 0 !important;
+    z-index: 2;
+    background-color: transparent;
+  }
+
+  .NavBar .nav-sec-2 .expdnav-content {
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
 }

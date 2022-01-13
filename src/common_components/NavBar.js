@@ -281,7 +281,7 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
               }
             >
               <FontAwesomeIcon icon={faGamepad} className="prefix-icon" />
-              Games
+              <span className="expand-nav-btn-label">Games</span>
               <FontAwesomeIcon
                 icon={faAngleDown}
                 className="nav-sec-2-btn-icon"
@@ -352,7 +352,7 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
                   >
                     <FontAwesomeIcon
                       icon={faTimes}
-                      className="expdnav-close-btn-icon"
+                      className="d-none d-md-block expdnav-close-btn-icon"
                     />
                   </span>
                 </div>
@@ -381,7 +381,7 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
               }
             >
               <FontAwesomeIcon icon={faMouse} className="prefix-icon" />
-              Hardwares
+              <span className="expand-nav-btn-label">Hardwares</span>
               <FontAwesomeIcon
                 icon={faAngleDown}
                 className="nav-sec-2-btn-icon"
@@ -436,7 +436,7 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
                   >
                     <FontAwesomeIcon
                       icon={faTimes}
-                      className="expdnav-close-btn-icon"
+                      className="d-none d-md-block expdnav-close-btn-icon"
                     />
                   </span>
                 </div>
@@ -461,7 +461,7 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
           </Link>
           <Link
             to=""
-            className="my-nav-btn"
+            className="my-nav-btn event-based-nav-btn"
             onClick={() => setActiveExpandedNav("")}
           >
             <span>Holiday Gifts Guide</span>

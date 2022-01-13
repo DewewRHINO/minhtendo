@@ -48,7 +48,23 @@ function App() {
 
   return (
     <Router>
-      <div className="App" style={{ paddingTop: navHeight }}>
+      <div className="d-block d-md-none App" style={{ paddingTop: "55px" }}>
+        <NavBar
+          innerRef={navRef}
+          openSearch={openSearch}
+          setOpenSearch={setOpenSearch}
+        />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/games" element={<GamesPage />} />
+          <Route path="/hardwares" element={<HardwarePage />} />
+          <Route path="/whatsnew" element={<NewsPage />} />
+          <Route path="/holiday" element={<HolidayPage />} />
+        </Routes>
+        <WebRoadmap />
+        <Footer />
+      </div>
+      <div className="d-none d-md-block App" style={{ paddingTop: navHeight }}>
         <NavBar
           innerRef={navRef}
           openSearch={openSearch}
