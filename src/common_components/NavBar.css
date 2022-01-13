@@ -572,11 +572,15 @@
     padding-left: 2.5rem;
   }
 
+  .NavBar .nav-sec-2 .can-expand {
+    border-bottom: 0 !important;
+  }
+
   .NavBar .nav-sec-2 .expanded-nav {
     position: relative;
     top: 0;
     background-color: transparent;
-    padding: 0 0 1rem 1rem;
+    padding: 0.5rem 0 1.5rem 1rem;
   }
 
   .NavBar .nav-sec-2 .expdnav-content {
