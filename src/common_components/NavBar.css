@@ -534,12 +534,13 @@
   }
 
   .NavBar .nav-sec-2 {
-    height: calc(100vh - 55px);
-    width: 90%;
-    margin-left: auto;
+    height: 200vh;
+    width: 80%;
+    position: fixed;
+    top: 55px;
+    right: 0;
     background-color: #f4f4f4;
     justify-content: flex-start;
-    position: static;
   }
 
   .NavBar .nav-sec-2 .my-nav-btn {
@@ -577,11 +578,21 @@
     top: 0 !important;
     z-index: 2;
     background-color: transparent;
-    padding: 0 1.5rem 1rem 1.5rem;
+    padding: 0 0 1rem 1rem;
   }
 
   .NavBar .nav-sec-2 .expdnav-content {
     flex-wrap: wrap;
     justify-content: flex-start;
+    margin: 0;
+    gap: 1rem;
+  }
+
+  .NavBar .nav-sec-2 .expdnav-item {
+    min-width: calc(50% - 1rem);
+  }
+
+  .NavBar .nav-sec-2 .expdnav-item .expdnav-btn {
+    width: 100%;
   }
 }
