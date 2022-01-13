@@ -47,7 +47,7 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
             <img src={BrandLogo} alt="brand" />
           </Link>
         </div>
-        <div className="search-box">
+        <div className="d-none d-md-flex search-box">
           <div
             className="search-box-content"
             onClick={() => setOpenSearch(true)}
@@ -234,7 +234,7 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
           </div>
         </div>
         <div className="nav-buttons">
-          <div className="nav-btn-box">
+          <div className="d-none d-md-flex nav-btn-box">
             <Link to="/" className="my-nav-btn">
               <FontAwesomeIcon
                 icon={faQuestionCircle}
@@ -243,7 +243,7 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
               Support
             </Link>
           </div>
-          <div className="nav-btn-box">
+          <div className="d-none d-md-flex nav-btn-box">
             <Link to="/" className="my-nav-btn">
               <FontAwesomeIcon icon={faHeart} className="nav-btn-icon" />
               Wish List
