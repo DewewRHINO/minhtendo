@@ -369,9 +369,9 @@
 }
 
 .NavBar .nav-sec-2 {
-  height: 2.5rem;
   display: flex;
   flex-direction: row;
+  /* flex-direction: column; */
   justify-content: space-around;
   align-items: center;
   position: relative;
@@ -380,8 +380,16 @@
 .NavBar .nav-sec-2-content {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  /* flex-direction: column; */
   gap: 1.5rem;
-  height: 100%;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+}
+
+.NavBar .nav-sec-2-content .my-nav-btn {
+  padding: 0.5rem 0;
+  height: auto;
 }
 
 .NavBar .nav-sec-2 .can-expand {
@@ -393,7 +401,6 @@
   background: none;
   border: none;
   outline: none;
-  padding: 0;
   font-weight: 600;
   height: 100%;
   display: flex;
@@ -413,7 +420,7 @@
 .NavBar .expanded-nav {
   cursor: auto;
   position: absolute;
-  top: 2.5rem;
+  top: 0;
   left: 0;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.9);
