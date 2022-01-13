@@ -289,17 +289,7 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
               />
             </button>
             {activeExpandedNav === "GAMES" && (
-              <div
-                className="expanded-nav"
-                style={{
-                  top:
-                    parseFloat(
-                      getComputedStyle(
-                        document.getElementsByClassName("nav-sec-2")[0]
-                      ).height
-                    ) + "px",
-                }}
-              >
+              <div className="expanded-nav">
                 <div className="expdnav-content">
                   <div className="expdnav-item">
                     <button className="expdnav-btn">
@@ -391,17 +381,7 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
               />
             </button>
             {activeExpandedNav === "HARDWARES" && (
-              <div
-                className="expanded-nav"
-                style={{
-                  top:
-                    parseFloat(
-                      getComputedStyle(
-                        document.getElementsByClassName("nav-sec-2")[0]
-                      ).height
-                    ) + "px",
-                }}
-              >
+              <div className="expanded-nav">
                 <div className="expdnav-content">
                   <div className="expdnav-item">
                     <button className="expdnav-btn switch-img-btn">

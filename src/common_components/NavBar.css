@@ -418,7 +418,7 @@
 .NavBar .expanded-nav {
   cursor: auto;
   position: absolute;
-  top: 0;
+  top: 2.5rem;
   left: 0;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.9);
@@ -555,7 +555,6 @@
   .NavBar .nav-sec-2 .can-expand .expand-nav-btn {
     width: 100%;
     justify-content: flex-start;
-    z-index: 1;
     padding: 1rem;
   }
 
@@ -575,8 +574,7 @@
 
   .NavBar .nav-sec-2 .expanded-nav {
     position: relative;
-    top: 0 !important;
-    z-index: 2;
+    top: 0;
     background-color: transparent;
     padding: 0 0 1rem 1rem;
   }
