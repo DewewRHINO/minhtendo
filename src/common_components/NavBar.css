@@ -142,7 +142,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 200vh;
   background-color: #000;
   opacity: 0;
   z-index: 1;
@@ -533,7 +533,7 @@
 @media only screen and (max-width: 768px) {
   .NavBar .side-nav-backdrop {
     width: 100%;
-    height: 100vh;
+    height: 200vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -608,7 +608,7 @@
 
   .NavBar .nav-sec-2 {
     height: 200vh;
-    width: 80%;
+    width: 20rem;
     position: fixed;
     top: 55px;
     right: 0;
@@ -655,18 +655,22 @@
     position: relative;
     top: 0;
     background-color: transparent;
-    padding: 0.5rem 0 1.5rem 1rem;
+    padding: 0.5rem 1rem 1.5rem 1rem;
   }
 
   .NavBar .nav-sec-2 .expdnav-content {
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     margin: 0;
     gap: 1rem;
   }
 
   .NavBar .nav-sec-2 .expdnav-item {
     min-width: calc(50% - 1rem);
+  }
+
+  .NavBar .nav-sec-2 .switch-img-btn-container {
+    flex: 1 1 100%;
   }
 
   .NavBar .nav-sec-2 .expdnav-item .expdnav-btn {

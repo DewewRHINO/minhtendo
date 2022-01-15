@@ -438,7 +438,7 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
             {activeExpandedNav === "HARDWARES" && (
               <div className="expanded-nav">
                 <div className="expdnav-content">
-                  <div className="expdnav-item">
+                  <div className="expdnav-item switch-img-btn-container">
                     <button className="expdnav-btn switch-img-btn">
                       <img
                         src="https://assets.nintendo.com/image/upload/q_auto,f_auto,w_240/Nclood/nav/switch-lineup"
