@@ -530,6 +530,20 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .NavBar {
+  }
+
+  .NavBar .side-nav-backdrop {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transition: opacity 0.3s linear;
+  }
+
   .NavBar .nav-sec-1 {
     justify-content: space-between;
   }

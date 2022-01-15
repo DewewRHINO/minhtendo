@@ -49,6 +49,17 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
 
   return (
     <div className="NavBar toggle-nav-in" ref={innerRef}>
+      <div
+        className="side-nav-backdrop"
+        style={
+          viewportWidth > 768
+            ? { display: "none" }
+            : openSideNav
+            ? { opacity: "1", pointerEvents: "auto" }
+            : { opacity: "0", pointerEvents: "none" }
+        }
+        onClick={() => setOpenSideNav(false)}
+      ></div>
       <div className="nav-section nav-sec-1">
         <div className="brand-box">
           <Link to="">
