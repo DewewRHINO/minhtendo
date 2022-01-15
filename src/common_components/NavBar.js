@@ -22,7 +22,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
+  const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
   const [searchInput, setSearchInput] = useState("");
+  const [openSideNav, setOpenSideNav] = useState(false);
   const [activeExpandedNav, setActiveExpandedNav] = useState(""); //  "" or "GAMES" or "HARDWARES"
   const searchRef = useRef();
   useEffect(() => {
@@ -31,6 +33,7 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
   }, [openSearch, searchInput]);
 
   useEffect(() => {
+    setViewportWidth(window.innerWidth);
     const closeExpandedNav = () => {
       setActiveExpandedNav("");
     };
@@ -39,6 +42,10 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
       document.removeEventListener("scroll", closeExpandedNav);
     };
   }, []);
+
+  const handleSideNavToggle = () => {
+    openSideNav ? setOpenSideNav(false) : setOpenSideNav(true);
+  };
 
   return (
     <div className="NavBar toggle-nav-in" ref={innerRef}>
@@ -256,14 +263,31 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
               Login / Signup
             </Link>
           </div>
-          <div className="d-block d-md-none nav-btn-box">
-            <Link to="/" className="my-nav-btn">
-              <FontAwesomeIcon icon={faBars} className="nav-btn-icon" />
+          <div className="d-block d-md-none mobile-nav-toggler nav-btn-box">
+            <Link
+              to="/"
+              className="my-nav-btn"
+              onClick={() => handleSideNavToggle()}
+            >
+              {openSideNav ? (
+                <FontAwesomeIcon icon={faTimes} className="nav-btn-icon" />
+              ) : (
+                <FontAwesomeIcon icon={faBars} className="nav-btn-icon" />
+              )}
             </Link>
           </div>
         </div>
       </div>
-      <div className="nav-section nav-sec-2">
+      <div
+        className="nav-section nav-sec-2"
+        style={
+          viewportWidth > 768
+            ? { transform: "translateX(0)" }
+            : openSideNav
+            ? { transform: "translateX(0)" }
+            : { transform: "translateX(100%)" }
+        }
+      >
         <div className="nav-sec-2-content">
           <div
             className="my-nav-btn can-expand"
