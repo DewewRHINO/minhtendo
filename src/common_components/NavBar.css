@@ -610,6 +610,7 @@
   .NavBar .nav-sec-2 {
     height: 200vh;
     width: 20rem;
+    max-width: 100%;
     position: fixed;
     top: 55px;
     right: 0;
