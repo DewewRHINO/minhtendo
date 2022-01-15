@@ -554,6 +554,37 @@
     flex-wrap: wrap;
   }
 
+  .NavBar .search-suggestion-box .suggestions {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .NavBar .search-suggestion-box .suggestion-link:nth-child(n + 5) {
+    display: none;
+  }
+
+  .NavBar .search-suggestion-box .suggestion-link {
+    min-width: 50%;
+    padding-right: 1rem;
+  }
+
+  .NavBar .search-suggestion-box .suggestion-title {
+    flex: 1 1 100%;
+  }
+
+  .NavBar .search-suggestion-box .link-tiles {
+    margin: 0;
+  }
+
+  .NavBar .search-suggestion-box .link-tiles .tile {
+    flex: 1 1 0px;
+  }
+
+  .NavBar .search-suggestion-box .link-tiles .red-tile {
+    flex: 1 1 100%;
+  }
+
   .NavBar .nav-sec-2,
   .NavBar .nav-sec-2-content {
     flex-direction: column;
