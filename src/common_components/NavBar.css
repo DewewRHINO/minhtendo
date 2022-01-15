@@ -544,6 +544,7 @@
 
   .NavBar .nav-sec-1 {
     justify-content: space-between;
+    padding-right: 0;
   }
 
   .NavBar .nav-sec-1 .duplicate-logo-and-input {
