@@ -66,9 +66,9 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
             <img src={BrandLogo} alt="brand" />
           </Link>
         </div>
-        <div className="d-none d-md-flex search-box">
+        <div className="search-box">
           <div
-            className="search-box-content"
+            className="d-none d-md-flex search-box-content"
             onClick={() => setOpenSearch(true)}
           >
             <label htmlFor="searchfield" className="searchlabel">
@@ -300,6 +300,17 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
         }
       >
         <div className="nav-sec-2-content">
+          <Link
+            to=""
+            className="my-nav-btn"
+            onClick={() => {
+              setActiveExpandedNav("");
+              setOpenSearch(true);
+            }}
+          >
+            <FontAwesomeIcon icon={faSearch} className="prefix-icon" />
+            Search
+          </Link>
           <div
             className="my-nav-btn can-expand"
             style={
