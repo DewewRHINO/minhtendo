@@ -18,6 +18,7 @@ import {
   faTag,
   faMobile,
   faTools,
+  faBars,
 } from "@fortawesome/free-solid-svg-icons";
 
 export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
@@ -253,6 +254,11 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
             <Link to="/" className="my-nav-btn">
               <FontAwesomeIcon icon={faUser} className="nav-btn-icon" />
               Login / Signup
+            </Link>
+          </div>
+          <div className="d-block d-md-none nav-btn-box">
+            <Link to="/" className="my-nav-btn">
+              <FontAwesomeIcon icon={faBars} className="nav-btn-icon" />
             </Link>
           </div>
         </div>
