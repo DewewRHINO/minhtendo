@@ -66,10 +66,7 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
             <img src={BrandLogo} alt="brand" />
           </Link>
         </div>
-        <div
-          className="search-box"
-          style={viewportWidth <= 768 && { zIndex: "10002" }}
-        >
+        <div className="search-box">
           <div
             className="d-none d-md-flex search-box-content"
             onClick={() => setOpenSearch(true)}
