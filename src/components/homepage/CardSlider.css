@@ -139,3 +139,18 @@
   border-top-left-radius: 0.2rem;
   border-bottom-left-radius: 0.2rem;
 }
+
+@media only screen and (max-width: 768px) {
+  .CardSlider .rail {
+    padding-left: 0.5rem;
+    padding-right: 0;
+  }
+
+  .CardSlider .rail .tiles .game-card {
+    min-width: 250px;
+  }
+
+  .CardSlider .controls button {
+    width: 3rem;
+  }
+}
