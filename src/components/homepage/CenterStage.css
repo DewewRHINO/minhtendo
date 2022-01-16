@@ -62,11 +62,20 @@
 
 @media only screen and (max-width: 768px) {
   .CenterStage .cstage-tail {
+    flex-wrap: wrap;
+    gap: 1rem;
     justify-content: space-between;
     padding: 1rem 0.5rem;
   }
 
   .CenterStage .cstage-tail .avai-now {
-    text-align: left;
+    text-align: center;
+    flex: 1 0 0px;
+    white-space: nowrap;
+  }
+
+  .CenterStage .learn-more {
+    flex: 1 0 0px;
+    justify-content: space-between;
   }
 }
