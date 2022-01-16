@@ -61,7 +61,7 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
         }
         onClick={() => setOpenSideNav(false)}
       ></div>
-      <div className="nav-section nav-sec-1">
+      <div className="nav-section nav-sec-1 original-nav-1">
         <div className="brand-box">
           <Link to="">
             <img src={BrandLogo} alt="brand" />
@@ -272,7 +272,7 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
           <div className="nav-btn-box">
             <Link to="/" className="my-nav-btn">
               <FontAwesomeIcon icon={faUser} className="nav-btn-icon" />
-              Login / Signup
+              Login <span className="d-none d-md-inline">/Sign Up</span>
             </Link>
           </div>
           <div className="d-block d-md-none mobile-nav-toggler nav-btn-box">
