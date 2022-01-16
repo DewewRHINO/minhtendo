@@ -81,3 +81,10 @@
 .LatestNews .see-all-btn:hover {
   background-color: #ac000d;
 }
+
+@media only screen and (max-width: 768px) {
+  .LatestNews .big-size-news,
+  .LatestNews .small-size-news {
+    flex-wrap: wrap;
+  }
+}
