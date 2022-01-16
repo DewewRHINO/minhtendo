@@ -16,7 +16,7 @@ export const CenterStage = () => {
           Learn more
           <FontAwesomeIcon icon={faAngleRight} className="action-button-icon" />
         </button>
-        <div className="age-badge-container">
+        <div className="d-none d-md-flex age-badge-container">
           <img
             className="age-badge"
             src={require("../../media/esrb-everyone.png")}

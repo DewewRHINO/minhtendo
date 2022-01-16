@@ -59,3 +59,14 @@
   color: #333; /* old IE */
   background-color: #333; /* Modern Browsers */
 }
+
+@media only screen and (max-width: 768px) {
+  .CenterStage .cstage-tail {
+    justify-content: space-between;
+    padding: 1rem 0.5rem;
+  }
+
+  .CenterStage .cstage-tail .avai-now {
+    text-align: left;
+  }
+}
