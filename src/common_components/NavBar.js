@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import "./NavBar.css";
 import { Link } from "react-router-dom";
 import BrandLogo from "../media/landscape-logo.png";
+import RegionUS from "../media/lang-us.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSearch,
@@ -497,6 +498,35 @@ export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
             onClick={() => setActiveExpandedNav("")}
           >
             <span>Holiday Gifts Guide</span>
+          </Link>
+          <hr className="section-separator" />
+          <Link
+            to=""
+            className="d-flex d-md-none my-nav-btn"
+            onClick={() => setActiveExpandedNav("")}
+          >
+            <FontAwesomeIcon icon={faHeart} className="prefix-icon" />
+            Wish List
+          </Link>
+          <Link
+            to=""
+            className="d-flex d-md-none my-nav-btn"
+            onClick={() => setActiveExpandedNav("")}
+          >
+            <FontAwesomeIcon icon={faQuestionCircle} className="prefix-icon" />
+            Support
+          </Link>
+          <Link
+            to=""
+            className="d-flex d-md-none my-nav-btn"
+            onClick={() => setActiveExpandedNav("")}
+          >
+            <img
+              src={RegionUS}
+              alt="Region US"
+              className="prefix-icon region-icon"
+            />
+            Change Region
           </Link>
         </div>
       </div>

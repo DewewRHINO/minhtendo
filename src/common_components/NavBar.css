@@ -684,4 +684,15 @@
   .NavBar .nav-sec-2 .expdnav-item .expdnav-btn {
     width: 100%;
   }
+
+  .NavBar .nav-sec-2 .section-separator {
+    height: 0.15rem;
+    width: 75%;
+    margin: 1rem auto;
+  }
+
+  .NavBar .nav-sec-2 .region-icon {
+    width: 2rem;
+    max-width: 2rem;
+  }
 }
