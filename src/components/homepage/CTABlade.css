@@ -68,6 +68,12 @@
   .CTABlade,
   .CTABlade .blade-elements {
     flex-direction: column;
-    padding-bottom: 0.5rem;
+    padding: 0 0.5rem 1rem 0.5rem;
+  }
+
+  .CTABlade .blade-elements .blade-text-container {
+    padding: 0;
+    text-align: center;
+    margin: 2rem 0;
   }
 }
