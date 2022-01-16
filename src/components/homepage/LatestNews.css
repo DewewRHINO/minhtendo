@@ -19,6 +19,9 @@
 
 .LatestNews .news-card {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .LatestNews .news-card .card-img-container {
@@ -46,6 +49,10 @@
 .LatestNews .news-card .card-title {
   font-weight: 600;
   font-size: 1.5rem;
+}
+.LatestNews .news-card .card-title:hover {
+  cursor: pointer;
+  color: #e60012;
 }
 
 .LatestNews .read-more-btn {
@@ -86,5 +93,34 @@
   .LatestNews .big-size-news,
   .LatestNews .small-size-news {
     flex-wrap: wrap;
+  }
+
+  .LatestNews .small-size-news .news-card {
+    flex-direction: row;
+    position: relative;
+  }
+
+  .LatestNews .small-size-news .news-card .card-img {
+    flex: 1 1 35%;
+  }
+
+  .LatestNews .small-size-news .news-card .card-date {
+    margin: 0;
+    position: absolute;
+    left: 40%;
+    top: 0;
+    font-size: 1rem;
+  }
+
+  .LatestNews .small-size-news .news-card .card-title {
+    flex: 1 1 65%;
+    padding-top: 2rem;
+    padding-left: 5%;
+    font-size: 1.25rem;
+  }
+
+  .LatestNews .see-all-btn {
+    width: 100%;
+    justify-content: space-between;
   }
 }

@@ -24,7 +24,7 @@ export const LatestNews = ({ data }) => {
       <div className="big-size-news">
         {mostRecentNews.map((news) => (
           <div className="news-card" key={news.id}>
-            <Link to="">
+            <Link to="" className="card-img">
               <div className="card-img-container">
                 <img src={news.postImg} alt={news.postImgAlt} />
               </div>
@@ -45,14 +45,14 @@ export const LatestNews = ({ data }) => {
       <div className="small-size-news">
         {olderNews.map((news) => (
           <div className="news-card" key={news.id}>
-            <Link to="">
+            <Link to="" className="card-img">
               <div className="card-img-container">
                 <img src={news.postImg} alt={news.postImgAlt} />
               </div>
             </Link>
             <p className="card-date">{news.date}</p>
             <p className="card-title">{news.postTitle}</p>
-            <button className="action-button read-more-btn">
+            <button className="d-none d-md-flex action-button read-more-btn">
               Read more
               <FontAwesomeIcon
                 icon={faAngleRight}
