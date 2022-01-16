@@ -38,3 +38,14 @@
 .AdGraphic .red-btn:hover {
   background-color: #ac000d;
 }
+
+@media only screen and (max-width: 768px) {
+  .AdGraphic .action-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .AdGraphic .action-box .action-text {
+    margin-bottom: 1rem;
+  }
+}
