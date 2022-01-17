@@ -13,6 +13,7 @@ import { useEffect, useRef, useState } from "react";
 function App() {
   let prevScroll = 0;
   const navRef = useRef();
+  const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
   const [navHeight, setNavHeight] = useState(0);
   const [openSearch, setOpenSearch] = useState(false);
 
@@ -53,6 +54,8 @@ function App() {
           innerRef={navRef}
           openSearch={openSearch}
           setOpenSearch={setOpenSearch}
+          viewportWidth={viewportWidth}
+          setViewportWidth={setViewportWidth}
         />
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -69,6 +72,8 @@ function App() {
           innerRef={navRef}
           openSearch={openSearch}
           setOpenSearch={setOpenSearch}
+          viewportWidth={viewportWidth}
+          setViewportWidth={setViewportWidth}
         />
         <Routes>
           <Route path="/" element={<HomePage />} />

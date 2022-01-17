@@ -22,8 +22,13 @@ import {
   faBars,
 } from "@fortawesome/free-solid-svg-icons";
 
-export const NavBar = ({ innerRef, setOpenSearch, openSearch }) => {
-  const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
+export const NavBar = ({
+  innerRef,
+  setOpenSearch,
+  openSearch,
+  viewportWidth,
+  setViewportWidth,
+}) => {
   const [searchInput, setSearchInput] = useState("");
   const [openSideNav, setOpenSideNav] = useState(false);
   const [activeExpandedNav, setActiveExpandedNav] = useState(""); //  "" or "GAMES" or "HARDWARES"
