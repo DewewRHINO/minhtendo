@@ -583,6 +583,11 @@
     padding: 0;
   }
 
+  .NavBar .nav-sec-1 .duplicate-logo-and-input .brand-box {
+    padding: 0;
+    flex: 0;
+  }
+
   .NavBar .nav-sec-1 .duplicate-logo-and-input .brand-box img {
     width: 0;
   }
@@ -594,6 +599,7 @@
   }
 
   .NavBar .duplicate-logo-and-input .search-box {
+    width: 100%;
     margin-left: 1rem;
     margin-right: 1rem;
   }

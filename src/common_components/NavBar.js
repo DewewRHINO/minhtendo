@@ -39,7 +39,6 @@ export const NavBar = ({
   }, [openSearch, searchInput]);
 
   useEffect(() => {
-    setViewportWidth(window.innerWidth);
     const closeExpandedNav = () => {
       setActiveExpandedNav("");
     };

@@ -19,6 +19,7 @@ function App() {
 
   useEffect(() => {
     console.log("Mounted App.");
+    setViewportWidth(window.innerWidth);
     setNavHeight(
       `${parseFloat(getComputedStyle(navRef.current).height) - 5}px`
     );
