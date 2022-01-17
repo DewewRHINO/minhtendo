@@ -29,11 +29,44 @@
 }
 
 .WebRoadmap .region-changer {
+  display: block;
   color: #000;
+  max-height: 100%;
 }
 
 .WebRoadmap .region-icon {
   width: 1.5rem;
-  height: auto;
+  height: 100%;
+  object-fit: contain;
   margin-left: 0.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .WebRoadmap {
+    padding: 0;
+  }
+
+  .WebRoadmap .linkgroup-container {
+    padding: 0;
+  }
+
+  .WebRoadmap .linkgroup-title {
+    width: 100%;
+    color: #1660a0;
+    background-color: #fafafa;
+    font-size: 1.5rem;
+    line-height: 100%;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+    padding: 1.5rem;
+  }
+  .WebRoadmap .linkgroup-title:hover {
+    cursor: pointer;
+  }
+
+  .WebRoadmap .grouped-links {
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+    padding: 1rem 1.5rem;
+  }
 }

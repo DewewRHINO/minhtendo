@@ -7,7 +7,7 @@ export const WebRoadmap = () => {
     <div className="WebRoadmap">
       <div className="container-fluid">
         <div className="row">
-          <div className="col-2 linkgroup-container">
+          <div className="col-12 col-md-2 linkgroup-container">
             <p className="linkgroup-title">About Nintendo</p>
             <ul className="grouped-links">
               <li>
@@ -37,7 +37,7 @@ export const WebRoadmap = () => {
               </li>
             </ul>
           </div>
-          <div className="col-2 linkgroup-container">
+          <div className="col-12 col-md-2 linkgroup-container">
             <p className="linkgroup-title">Where to Buy</p>
             <ul className="grouped-links">
               <li>
@@ -62,7 +62,7 @@ export const WebRoadmap = () => {
               </li>
             </ul>
           </div>
-          <div className="col-2 linkgroup-container">
+          <div className="col-12 col-md-2 linkgroup-container">
             <p className="linkgroup-title">Support</p>
             <ul className="grouped-links">
               <li>
@@ -97,7 +97,7 @@ export const WebRoadmap = () => {
               </li>
             </ul>
           </div>
-          <div className="col-2 linkgroup-container">
+          <div className="col-12 col-md-2 linkgroup-container">
             <p className="linkgroup-title">Parents</p>
             <ul className="grouped-links">
               <li>
@@ -112,7 +112,7 @@ export const WebRoadmap = () => {
               </li>
             </ul>
           </div>
-          <div className="col-2 linkgroup-container">
+          <div className="col-12 col-md-2 linkgroup-container">
             <p className="linkgroup-title">Community</p>
             <ul className="grouped-links">
               <li>
@@ -127,7 +127,7 @@ export const WebRoadmap = () => {
               </li>
             </ul>
           </div>
-          <div className="col-2 linkgroup-container">
+          <div className="col-12 col-md-2 linkgroup-container">
             <p className="linkgroup-title">Privacy</p>
             <ul className="grouped-links">
               <li>
@@ -146,7 +146,7 @@ export const WebRoadmap = () => {
       </div>
       <div className="container-fluid">
         <div className="row justify-content-end">
-          <div className="col-2 linkgroup-container">
+          <div className="col-12 col-md-2 linkgroup-container">
             <p className="linkgroup-title">Legal</p>
             <ul className="grouped-links">
               <li>
@@ -165,15 +165,15 @@ export const WebRoadmap = () => {
       </div>
       <div className="container-fluid">
         <div className="row">
-          <div className="col-2 linkgroup-container">
+          <div className="col-12 col-md-2 linkgroup-container">
             <Link to="/" className="linkgroup-title region-changer">
               Change region
+              <img
+                className="region-icon"
+                src={require("../media/lang-us.png")}
+                alt="region"
+              />
             </Link>
-            <img
-              className="region-icon"
-              src={require("../media/lang-us.png")}
-              alt="region"
-            ></img>
           </div>
         </div>
       </div>
