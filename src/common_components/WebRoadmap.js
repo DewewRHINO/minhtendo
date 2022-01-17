@@ -27,6 +27,7 @@ export const WebRoadmap = ({ viewportWidth }) => {
               <FontAwesomeIcon
                 icon={faAngleDown}
                 className="d-block d-md-none collapse-icon"
+                flip={shownSection === "ABOUT" ? "vertical" : "horizontal"}
               />
             </p>
             <ul
@@ -79,6 +80,7 @@ export const WebRoadmap = ({ viewportWidth }) => {
               <FontAwesomeIcon
                 icon={faAngleDown}
                 className="d-block d-md-none collapse-icon"
+                flip={shownSection === "BUY" ? "vertical" : "horizontal"}
               />
             </p>
             <ul
@@ -126,6 +128,7 @@ export const WebRoadmap = ({ viewportWidth }) => {
               <FontAwesomeIcon
                 icon={faAngleDown}
                 className="d-block d-md-none collapse-icon"
+                flip={shownSection === "SUPPORT" ? "vertical" : "horizontal"}
               />
             </p>
             <ul
@@ -183,6 +186,7 @@ export const WebRoadmap = ({ viewportWidth }) => {
               <FontAwesomeIcon
                 icon={faAngleDown}
                 className="d-block d-md-none collapse-icon"
+                flip={shownSection === "PARENTS" ? "vertical" : "horizontal"}
               />
             </p>
             <ul
@@ -220,6 +224,7 @@ export const WebRoadmap = ({ viewportWidth }) => {
               <FontAwesomeIcon
                 icon={faAngleDown}
                 className="d-block d-md-none collapse-icon"
+                flip={shownSection === "COMMUNITY" ? "vertical" : "horizontal"}
               />
             </p>
             <ul
@@ -257,6 +262,7 @@ export const WebRoadmap = ({ viewportWidth }) => {
               <FontAwesomeIcon
                 icon={faAngleDown}
                 className="d-block d-md-none collapse-icon"
+                flip={shownSection === "PRIVACY" ? "vertical" : "horizontal"}
               />
             </p>
             <ul
@@ -298,6 +304,7 @@ export const WebRoadmap = ({ viewportWidth }) => {
               <FontAwesomeIcon
                 icon={faAngleDown}
                 className="d-block d-md-none collapse-icon"
+                flip={shownSection === "LEGAL" ? "vertical" : "horizontal"}
               />
             </p>
             <ul
