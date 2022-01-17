@@ -65,7 +65,7 @@ function App() {
           <Route path="/whatsnew" element={<NewsPage />} />
           <Route path="/holiday" element={<HolidayPage />} />
         </Routes>
-        <WebRoadmap />
+        <WebRoadmap viewportWidth={viewportWidth} />
         <Footer />
       </div>
       <div className="d-none d-md-block App" style={{ paddingTop: navHeight }}>
@@ -83,7 +83,7 @@ function App() {
           <Route path="/whatsnew" element={<NewsPage />} />
           <Route path="/holiday" element={<HolidayPage />} />
         </Routes>
-        <WebRoadmap />
+        <WebRoadmap viewportWidth={viewportWidth} />
         <Footer />
       </div>
     </Router>

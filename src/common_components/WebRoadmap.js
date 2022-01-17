@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./WebRoadmap.css";
 
-export const WebRoadmap = () => {
+export const WebRoadmap = ({ viewportWidth }) => {
   return (
     <div className="WebRoadmap">
       <div className="container-fluid">
