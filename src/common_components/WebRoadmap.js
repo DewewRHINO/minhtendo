@@ -1,15 +1,44 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./WebRoadmap.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
 export const WebRoadmap = ({ viewportWidth }) => {
+  const [shownSection, setShownSection] = useState("");
+  useEffect(() => {
+    console.log(shownSection);
+  });
+
   return (
     <div className="WebRoadmap">
       <div className="container-fluid">
         <div className="row">
           <div className="col-12 col-md-2 linkgroup-container">
-            <p className="linkgroup-title">About Nintendo</p>
-            <ul className="grouped-links">
+            <p
+              className="linkgroup-title"
+              onClick={() =>
+                shownSection === "ABOUT"
+                  ? setShownSection("")
+                  : setShownSection("ABOUT")
+              }
+            >
+              About Nintendo
+              <FontAwesomeIcon
+                icon={faAngleDown}
+                className="d-block d-md-none collapse-icon"
+              />
+            </p>
+            <ul
+              className="grouped-links"
+              style={
+                viewportWidth <= 768
+                  ? shownSection === "ABOUT"
+                    ? { display: "block" }
+                    : { display: "none" }
+                  : {}
+              }
+            >
               <li>
                 <Link to="/" className="roadmap-link">
                   Company Info
@@ -38,8 +67,30 @@ export const WebRoadmap = ({ viewportWidth }) => {
             </ul>
           </div>
           <div className="col-12 col-md-2 linkgroup-container">
-            <p className="linkgroup-title">Where to Buy</p>
-            <ul className="grouped-links">
+            <p
+              className="linkgroup-title"
+              onClick={() =>
+                shownSection === "BUY"
+                  ? setShownSection("")
+                  : setShownSection("BUY")
+              }
+            >
+              Where to Buy
+              <FontAwesomeIcon
+                icon={faAngleDown}
+                className="d-block d-md-none collapse-icon"
+              />
+            </p>
+            <ul
+              className="grouped-links"
+              style={
+                viewportWidth <= 768
+                  ? shownSection === "BUY"
+                    ? { display: "block" }
+                    : { display: "none" }
+                  : {}
+              }
+            >
               <li>
                 <Link to="/" className="roadmap-link">
                   Game Store
@@ -63,8 +114,30 @@ export const WebRoadmap = ({ viewportWidth }) => {
             </ul>
           </div>
           <div className="col-12 col-md-2 linkgroup-container">
-            <p className="linkgroup-title">Support</p>
-            <ul className="grouped-links">
+            <p
+              className="linkgroup-title"
+              onClick={() =>
+                shownSection === "SUPPORT"
+                  ? setShownSection("")
+                  : setShownSection("SUPPORT")
+              }
+            >
+              Support
+              <FontAwesomeIcon
+                icon={faAngleDown}
+                className="d-block d-md-none collapse-icon"
+              />
+            </p>
+            <ul
+              className="grouped-links"
+              style={
+                viewportWidth <= 768
+                  ? shownSection === "SUPPORT"
+                    ? { display: "block" }
+                    : { display: "none" }
+                  : {}
+              }
+            >
               <li>
                 <Link to="/" className="roadmap-link">
                   Health & Safety Precautions
@@ -98,8 +171,30 @@ export const WebRoadmap = ({ viewportWidth }) => {
             </ul>
           </div>
           <div className="col-12 col-md-2 linkgroup-container">
-            <p className="linkgroup-title">Parents</p>
-            <ul className="grouped-links">
+            <p
+              className="linkgroup-title"
+              onClick={() =>
+                shownSection === "PARENTS"
+                  ? setShownSection("")
+                  : setShownSection("PARENTS")
+              }
+            >
+              Parents
+              <FontAwesomeIcon
+                icon={faAngleDown}
+                className="d-block d-md-none collapse-icon"
+              />
+            </p>
+            <ul
+              className="grouped-links"
+              style={
+                viewportWidth <= 768
+                  ? shownSection === "PARENTS"
+                    ? { display: "block" }
+                    : { display: "none" }
+                  : {}
+              }
+            >
               <li>
                 <Link to="/" className="roadmap-link">
                   Info for Parents
@@ -113,8 +208,30 @@ export const WebRoadmap = ({ viewportWidth }) => {
             </ul>
           </div>
           <div className="col-12 col-md-2 linkgroup-container">
-            <p className="linkgroup-title">Community</p>
-            <ul className="grouped-links">
+            <p
+              className="linkgroup-title"
+              onClick={() =>
+                shownSection === "COMMUNITY"
+                  ? setShownSection("")
+                  : setShownSection("COMMUNITY")
+              }
+            >
+              Community
+              <FontAwesomeIcon
+                icon={faAngleDown}
+                className="d-block d-md-none collapse-icon"
+              />
+            </p>
+            <ul
+              className="grouped-links"
+              style={
+                viewportWidth <= 768
+                  ? shownSection === "COMMUNITY"
+                    ? { display: "block" }
+                    : { display: "none" }
+                  : {}
+              }
+            >
               <li>
                 <Link to="/" className="roadmap-link">
                   Community Guidelines
@@ -128,8 +245,30 @@ export const WebRoadmap = ({ viewportWidth }) => {
             </ul>
           </div>
           <div className="col-12 col-md-2 linkgroup-container">
-            <p className="linkgroup-title">Privacy</p>
-            <ul className="grouped-links">
+            <p
+              className="linkgroup-title"
+              onClick={() =>
+                shownSection === "PRIVACY"
+                  ? setShownSection("")
+                  : setShownSection("PRIVACY")
+              }
+            >
+              Privacy
+              <FontAwesomeIcon
+                icon={faAngleDown}
+                className="d-block d-md-none collapse-icon"
+              />
+            </p>
+            <ul
+              className="grouped-links"
+              style={
+                viewportWidth <= 768
+                  ? shownSection === "PRIVACY"
+                    ? { display: "block" }
+                    : { display: "none" }
+                  : {}
+              }
+            >
               <li>
                 <Link to="/" className="roadmap-link">
                   Privacy Policy
@@ -147,8 +286,30 @@ export const WebRoadmap = ({ viewportWidth }) => {
       <div className="container-fluid">
         <div className="row justify-content-end">
           <div className="col-12 col-md-2 linkgroup-container">
-            <p className="linkgroup-title">Legal</p>
-            <ul className="grouped-links">
+            <p
+              className="linkgroup-title"
+              onClick={() =>
+                shownSection === "LEGAL"
+                  ? setShownSection("")
+                  : setShownSection("LEGAL")
+              }
+            >
+              Legal
+              <FontAwesomeIcon
+                icon={faAngleDown}
+                className="d-block d-md-none collapse-icon"
+              />
+            </p>
+            <ul
+              className="grouped-links"
+              style={
+                viewportWidth <= 768
+                  ? shownSection === "LEGAL"
+                    ? { display: "block" }
+                    : { display: "none" }
+                  : {}
+              }
+            >
               <li>
                 <Link to="/" className="roadmap-link">
                   Documents and Policies
