@@ -6,9 +6,6 @@ import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
 export const WebRoadmap = ({ viewportWidth }) => {
   const [shownSection, setShownSection] = useState("");
-  useEffect(() => {
-    console.log(shownSection);
-  });
 
   return (
     <div className="WebRoadmap">
