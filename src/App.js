@@ -18,6 +18,7 @@ function App() {
   const [openSearch, setOpenSearch] = useState(false);
 
   useEffect(() => {
+    console.log("Please refresh the page if you're resizing the browser.");
     console.log("Mounted App.");
     setViewportWidth(window.innerWidth);
     setNavHeight(
