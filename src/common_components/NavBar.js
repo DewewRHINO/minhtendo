@@ -307,7 +307,7 @@ export const NavBar = ({
         <div className="nav-sec-2-content">
           <Link
             to=""
-            className="my-nav-btn"
+            className="d-inline-flex d-md-none my-nav-btn"
             onClick={() => {
               setActiveExpandedNav("");
               setOpenSearch(true);
