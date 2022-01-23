@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { toMMDDYY } from "../../util/conversions";
 import "./CardSlider.css";
@@ -17,6 +17,7 @@ export const CardSlider = ({
 }) => {
   const [lastScrollPos, setLastScrollPos] = useState(0);
   const [showPrevScrollBtn, setShowPrevScrollBtn] = useState(false);
+  const tilesRef = useRef();
   const games = [...data];
   //  sort chronologically
   const newToOldSortedGames = games.sort(
@@ -28,9 +29,8 @@ export const CardSlider = ({
     formattedNews[i].date = toMMDDYY(formattedNews[i].releaseDateEpoch);
   }
 
-  const handleScrollTiles = (e, dir) => {
-    const tiles =
-      e.target.parentElement.parentElement.childNodes[0].childNodes[0];
+  const handleScrollTiles = (dir) => {
+    const tiles = tilesRef.current;
     const cardWidth =
       tiles.childNodes[0].offsetWidth +
       parseFloat(getComputedStyle(tiles).fontSize) * 2; // total width of (1 card + 2 rem flex gap)
@@ -59,7 +59,7 @@ export const CardSlider = ({
   return (
     <div className="CardSlider">
       <div className="rail">
-        <div className="tiles">
+        <div className="tiles" ref={tilesRef}>
           {games.map((game) => (
             <div className="game-card" key={game.gameId}>
               <Link to="">
@@ -88,15 +88,12 @@ export const CardSlider = ({
         {showPrevScrollBtn && (
           <button
             className="prev-btn"
-            onClick={(e) => handleScrollTiles(e, "prev")}
+            onClick={() => handleScrollTiles("prev")}
           >
             <FontAwesomeIcon icon={faAngleLeft} className="control-icon" />
           </button>
         )}
-        <button
-          className="next-btn"
-          onClick={(e) => handleScrollTiles(e, "next")}
-        >
+        <button className="next-btn" onClick={() => handleScrollTiles("next")}>
           <FontAwesomeIcon icon={faAngleRight} className="control-icon" />
         </button>
       </div>
