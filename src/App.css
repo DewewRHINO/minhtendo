@@ -3,7 +3,9 @@ input::placeholder {
 }
 
 .scroll-off {
-  height: 100vh;
+  pointer-events: none;
+  height: 0;
+  opacity: 0;
   overflow: hidden;
 }
 
