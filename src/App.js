@@ -21,6 +21,7 @@ function App() {
 
   useEffect(() => {
     // setPageLoading(false);
+    window.onload = () => setPageLoading(false);
     console.log("Please refresh the page if you're resizing the browser.");
     console.log("Mounted App.");
     setViewportWidth(window.innerWidth);
@@ -31,7 +32,6 @@ function App() {
 
   useEffect(() => {
     console.log("Re-rendering App.");
-    window.onload = () => setPageLoading(false);
   });
 
   useEffect(() => {
