@@ -4,8 +4,8 @@ import "./PageLoading.css";
 export const PageLoading = () => {
   return (
     <div className="PageLoading">
-      <div class="loadingio-spinner-ellipsis-c022ii25sns">
-        <div class="ldio-bvmoqojp2zo">
+      <div className="loadingio-spinner-ellipsis-c022ii25sns">
+        <div className="ldio-bvmoqojp2zo">
           <div></div>
           <div></div>
           <div></div>

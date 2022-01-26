@@ -18,9 +18,18 @@ function App() {
   const [openSearch, setOpenSearch] = useState(false);
 
   useEffect(() => {
-    window.onload = () =>
-      (document.getElementsByClassName("PageLoading")[0].style.display =
-        "none");
+    // page loading logic
+    window.onload = () => {
+      setTimeout(() => {
+        document.getElementsByClassName("PageLoading")[0].style.display =
+          "none";
+        [...document.getElementsByClassName("scroll-off")].forEach(() => {
+          document
+            .getElementsByClassName("scroll-off")[0]
+            .classList.remove("scroll-off");
+        });
+      }, 1500);
+    };
     console.log("Please refresh the page if you're resizing the browser.");
     console.log("Mounted App.");
     setViewportWidth(window.innerWidth);
@@ -54,7 +63,10 @@ function App() {
 
   return (
     <Router>
-      <div className="d-block d-md-none App" style={{ paddingTop: "55px" }}>
+      <div
+        className="d-block d-md-none App scroll-off"
+        style={{ paddingTop: "55px" }}
+      >
         <NavBar
           innerRef={navRef}
           openSearch={openSearch}
@@ -72,7 +84,10 @@ function App() {
         <WebRoadmap viewportWidth={viewportWidth} />
         <Footer />
       </div>
-      <div className="d-none d-md-block App" style={{ paddingTop: navHeight }}>
+      <div
+        className="d-none d-md-block App scroll-off"
+        style={{ paddingTop: navHeight }}
+      >
         <NavBar
           innerRef={navRef}
           openSearch={openSearch}

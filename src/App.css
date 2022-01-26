@@ -2,6 +2,11 @@ input::placeholder {
   color: #777;
 }
 
+.scroll-off {
+  height: 100vh;
+  overflow: hidden;
+}
+
 .App {
   text-align: center;
   color: #484848;
