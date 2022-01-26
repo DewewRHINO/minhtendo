@@ -9,7 +9,6 @@ import { HardwarePage } from "./pages/HardwarePage";
 import { NewsPage } from "./pages/NewsPage";
 import { HolidayPage } from "./pages/HolidayPage";
 import { useEffect, useRef, useState } from "react";
-import { PageLoading } from "./common_components/PageLoading";
 
 function App() {
   let prevScroll = 0;
@@ -17,11 +16,11 @@ function App() {
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
   const [navHeight, setNavHeight] = useState(0);
   const [openSearch, setOpenSearch] = useState(false);
-  const [pageLoading, setPageLoading] = useState(true);
 
   useEffect(() => {
-    // setPageLoading(false);
-    window.onload = () => setPageLoading(false);
+    window.onload = () =>
+      (document.getElementsByClassName("PageLoading")[0].style.display =
+        "none");
     console.log("Please refresh the page if you're resizing the browser.");
     console.log("Mounted App.");
     setViewportWidth(window.innerWidth);
@@ -55,7 +54,6 @@ function App() {
 
   return (
     <Router>
-      {!!pageLoading && <PageLoading />}
       <div className="d-block d-md-none App" style={{ paddingTop: "55px" }}>
         <NavBar
           innerRef={navRef}
