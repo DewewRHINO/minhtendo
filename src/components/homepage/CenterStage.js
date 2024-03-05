@@ -1,6 +1,6 @@
 import React from "react";
 import "./CenterStage.css";
-import BigBrainAcademy from "../../media/BigBrainAcademy-BrainvsBrain_v01.avif";
+import BigBrainAcademy from "../../media/pikminh-banner.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 

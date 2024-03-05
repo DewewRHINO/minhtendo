@@ -77,9 +77,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/games" element={<GamesPage />} />
-          <Route path="/hardwares" element={<HardwarePage />} />
           <Route path="/whatsnew" element={<NewsPage />} />
-          <Route path="/holiday" element={<HolidayPage />} />
         </Routes>
         <WebRoadmap viewportWidth={viewportWidth} />
         <Footer />

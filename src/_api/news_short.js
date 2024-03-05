@@ -33,11 +33,11 @@ const news_short = [
   {
     id: 3,
     postDateEpoch: "1640736000",
-    postTitle: "Roar in the New Year with Mario Kart Tour!",
+    postTitle: "Need game reccomendations?",
     postIntro:
-      "Happy Meow Year, cool cats! Celebrate the Year of the Tiger in Mushroom Kingdom-style with the New Year’s 2022 Tour, the latest limited-time event in the Mario Kart Tour game, happening now.",
+      "Ask Minh Tran himself! Are you looking for your next game or want to place an order and don't want to press buttons??? Talk to Minh!! He is very nice. Visit him at https://supcup-lancebot-app-wvmixy.streamlit.app/",
     postImg:
-      "https://assets.nintendo.com/image/upload/f_auto,q_auto/ncom/en_US/articles/2021/mobilenews-new-years-2022-tour-begins-in-the-mario-kart-tour-game/N.com_New_Year_s_2022_Tour_12-29-21?v=2022010118",
+      "https://media.discordapp.net/attachments/973058108114997269/1214427222744506491/1689743448626.png?ex=65f9127c&is=65e69d7c&hm=9c769195b8cbf021f57bd3d245708373acd9b1a58b009b3bad228f853984b4b6&=&format=webp&quality=lossless&width=350&height=350",
     postImgAlt: "New Year Mario Cart Tour",
   },
   {
@@ -55,12 +55,12 @@ const news_short = [
     id: 5,
     postDateEpoch: "1640822400",
     postTitle:
-      "Discover frosty fun this January in Animal Crossing: Pocket Camp!",
+      "Minstagram!!!",
     postIntro:
-      "Happy New Year, campers! The snowy weather continues in the Animal Crossing™: Pocket Camp game. Come “chill” with us at the campsite and enjoy the winter wonderland!",
+      "Come see our new version of Minstagram!!! at https://minhstagram.jacobjayme.xyz/",
     postImg:
-      "https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_555/ncom/en_US/articles/2021/discover-frosty-fun-this-january-in-animal-crossing-pocket-camp/N.com_Article_ACPC_12-30-21_Banner?v=2022010118",
-    postImgAlt: "Animal Crossing Pocket Camp",
+      "https://media.discordapp.net/attachments/973058108114997269/1214426723383255090/image.png?ex=65f91205&is=65e69d05&hm=b019fc0eed68e92dfa6180e832941e7467926812a90f2c0b5694ddcd1d82a7c5&=&format=webp&quality=lossless&width=437&height=350",
+    postImgAlt: "Minstagram",
   },
 ];
 
