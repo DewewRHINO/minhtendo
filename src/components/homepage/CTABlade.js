@@ -30,7 +30,7 @@ export const CTABlade = ({
       <div className="blade-elements">
         <div className="blade-text-container">
           <p className="blade-text">
-            {bladeDesc || "Nintendo is loved by every age group of gamers!"}
+            {bladeDesc || "Minhtendo is loved by every age group of gamers!"}
           </p>
         </div>
         <div className="cta-btn-container">
