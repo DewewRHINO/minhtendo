@@ -14,12 +14,13 @@ const news_short = [
     postDateEpoch: "1640217600",
     postTitle: "Ring in the holidays with your next indie adventure",
     postIntro:
-      "Starting today on Nintendo.com and Nintendo eShop, you can save up to 75% on select digital games & software bundles with DLC* add-on content.",
+      "Starting today on Minhtendo.com and Minhtendo eShop, you can save up to 75% on select digital games & software bundles with DLC* add-on content.",
     postImg:
       "https://assets.nintendo.com/image/upload/f_auto,q_auto/ncom/en_US/merchandising/Sales%20and%20Deals/2021/IWS%202021/Holiday%202021/1920x1080_Aug-Sale-2021_Ncom_EN_v01-a?v=2022010118",
     postImgAlt: "Indie World Xmas Holiday Sales",
   },
   {
+    //replace?
     id: 2,
     postDateEpoch: "1640304000",
     postTitle:
@@ -44,23 +45,23 @@ const news_short = [
     id: 4,
     postDateEpoch: "1640736000",
     postTitle:
-      "Catch up on some of 2021’s highly-celebrated Nintendo Switch games.",
+      "Catch up on some of 2021’s highly-celebrated Minhtendo Switch games.",
     postIntro:
       "Here’s a select sample of what was released this year on the Nintendo Switch™ system.",
     postImg:
       "https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_555/ncom/en_US/articles/2021/Nintendo%20Switch%202021%20game%20highlights/800x450_Switch_News_GameHighlights2021?v=2022010118",
-    postImgAlt: "Nintendo Game Highlights",
+    postImgAlt: "Minhtendo Game Highlights",
   },
   {
     id: 5,
     postDateEpoch: "1640822400",
     postTitle:
-      "Minstagram!!!",
+      "Minhstagram!!!",
     postIntro:
-      "Come see our new version of Minstagram!!! at https://minhstagram.jacobjayme.xyz/",
+      "Come see our new version of Minhstagram!!! at https://minhstagram.jacobjayme.xyz/",
     postImg:
       "https://media.discordapp.net/attachments/973058108114997269/1214426723383255090/image.png?ex=65f91205&is=65e69d05&hm=b019fc0eed68e92dfa6180e832941e7467926812a90f2c0b5694ddcd1d82a7c5&=&format=webp&quality=lossless&width=437&height=350",
-    postImgAlt: "Minstagram",
+    postImgAlt: "Minhstagram",
   },
 ];
 
