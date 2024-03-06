@@ -124,7 +124,7 @@ export const NavBar = ({
                     </label>
                     <input
                       className="searchfield"
-                      placeholder="Search Nintendo.com"
+                      placeholder="Search Minhtendo.com"
                       size={50}
                       ref={searchRef}
                       value={searchInput}
@@ -156,28 +156,28 @@ export const NavBar = ({
                       className="suggestion-link"
                       tabIndex={openSearch ? 0 : -1}
                     >
-                      <p>Nintendo Switch</p>
+                      <p>Minhtendo Switch</p>
                     </Link>
                     <Link
                       to=""
                       className="suggestion-link"
                       tabIndex={openSearch ? 0 : -1}
                     >
-                      <p>Nintendo Switch Games</p>
+                      <p>Minhtendo Switch Games</p>
                     </Link>
                     <Link
                       to=""
                       className="suggestion-link"
                       tabIndex={openSearch ? 0 : -1}
                     >
-                      <p>Nintendo Switch Online</p>
+                      <p>Minhtendo Switch Online</p>
                     </Link>
                     <Link
                       to=""
                       className="suggestion-link"
                       tabIndex={openSearch ? 0 : -1}
                     >
-                      <p>Nintendo news</p>
+                      <p>Minhtendo news</p>
                     </Link>
                     <Link
                       to=""
@@ -247,7 +247,7 @@ export const NavBar = ({
                               />
                             </span>
                           </div>
-                          Nintendo Switch games
+                          Minhtendo Switch games
                         </div>
                       </div>
                     </div>
@@ -447,7 +447,7 @@ export const NavBar = ({
                         alt="Switch Lineup"
                       />
                     </button>
-                    <p className="expdnav-btn-label">Nintendo Switch Lineup</p>
+                    <p className="expdnav-btn-label">Minhtendo Switch Lineup</p>
                   </div>
                   <div className="expdnav-item">
                     <button className="expdnav-btn accs-img-btn">
@@ -494,7 +494,7 @@ export const NavBar = ({
             onClick={() => setActiveExpandedNav("")}
           >
             <FontAwesomeIcon icon={faStar} className="prefix-icon" />
-            Play Nintendo
+            Play Minhtendo
           </Link>
           <Link
             to=""

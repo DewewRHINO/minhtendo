@@ -59,9 +59,9 @@ export const Footer = () => {
           </div>
         </div>
         <div className="footer-infos text-center">
-          <p>© 2021 Nintendo. Games are property of their respective owners.</p>
+          <p>© 2024 Minhtendo. Games are property of their respective owners.</p>
           <p>
-            Nintendo of America Inc. | Headquarters are in Redmond, Washington,
+            Minhtendo of America Inc. | Headquarters are in Cypress, California,
             USA |{" "}
             <span>
               <Link className="support-btn" to="/">
