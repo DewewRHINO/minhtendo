@@ -35,7 +35,7 @@ const news_short = [
     postDateEpoch: "1640736000",
     postTitle: "Need game reccomendations?",
     postIntro:
-      "Ask Minh Tran himself! Are you looking for your next game or want to place an order and don't want to press buttons??? Talk to Minh!! He is very nice. Visit him at https://supcup-lancebot-app-wvmixy.streamlit.app/",
+      "Ask Minh Tran himself! Are you looking for your next game or want to place an order and don't want to press buttons??? Talk to Minh!! He is very nice. Visit him at https://minhtendobot.streamlit.app/",
     postImg:
       "https://media.discordapp.net/attachments/973058108114997269/1214427222744506491/1689743448626.png?ex=65f9127c&is=65e69d7c&hm=9c769195b8cbf021f57bd3d245708373acd9b1a58b009b3bad228f853984b4b6&=&format=webp&quality=lossless&width=350&height=350",
     postImgAlt: "New Year Mario Cart Tour",
