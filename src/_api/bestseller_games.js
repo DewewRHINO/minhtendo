@@ -27,7 +27,7 @@ const bestseller_games = [
     gamePlatform: "Minhtendo Switch",
     gameImg:
       "https://media.discordapp.net/attachments/973058108114997269/1214421436522037278/MinhCraft_275x150.png?ex=65f90d19&is=65e69819&hm=2a4e0453e5331bcad929a457b2b176c90b0c5c68264e4bfb88472dbeb44e56b9&=&format=webp&quality=lossless",
-    gameImgAlt: "Minecraft",
+    gameImgAlt: "Minhcraft",
     gameCurrentPrice: "$39.99",
     gameOriginalPrice: "$100.00",
     releaseDateEpoch: "1529452800",
@@ -49,7 +49,7 @@ const bestseller_games = [
     gamePlatform: "Minhtendo Switch",
     gameImg:
       "https://media.discordapp.net/attachments/973058108114997269/1214423979377299518/file-SuZ6xmYeAkxFWLfw0j6lbyHh.png?ex=65f90f77&is=65e69a77&hm=c36f676a6c2e3c2481c9172be0c8c9e3f47e082b36665b3283e901c87822eafc&=&format=webp&quality=lossless&width=350&height=350",
-    gameImgAlt: "Animal Crossing: New Horizons",
+    gameImgAlt: "Animinh Crossing: New Horizons",
     gameCurrentPrice: "$59.99",
     gameOriginalPrice: "$159.99",
     releaseDateEpoch: "1584662400",
@@ -60,7 +60,7 @@ const bestseller_games = [
     gamePlatform: "Minhtendo Switch",
     gameImg:
       "https://media.discordapp.net/attachments/973058108114997269/1214424448233635931/file-tsJMjaVH3STK35HA5abxFk1y.png?ex=65f90fe7&is=65e69ae7&hm=61c24ea5f0d6091b8442a26858517b9a8fcebe14bb0160b5ab72c01741a637f2&=&format=webp&quality=lossless&width=350&height=350",
-    gameImgAlt: "Super Smash Bros. Ultimate",
+    gameImgAlt: "Super Smash Bros. Ultiminh",
     gameCurrentPrice: "$59.99",
     gameOriginalPrice: "",
     releaseDateEpoch: "1544140800",
@@ -79,7 +79,7 @@ const bestseller_games = [
   {
     gameId: 8,
     gameName: "Big Brain Academy™: Brain vs. Brain",
-    gamePlatform: "Nintendo Switch",
+    gamePlatform: "Minhtendo Switch",
     gameImg:
       "https://assets.nintendo.com/image/upload/c_pad,f_auto,q_auto,w_300/ncom/en_US/games/switch/b/big-brain-academy-brain-vs-brain-switch/hero",
     gameImgAlt: "Big Brain Academy: Brain vs. Brain",

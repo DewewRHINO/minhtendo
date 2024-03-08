@@ -12,7 +12,7 @@ export const AdGraphic = () => {
       </div>
       <div className="action-box">
         <span className="action-text">
-          Nintendo Switch family - Three ways to play
+          Minhtendo Switch family - Three ways to play
         </span>
         <span className="action-button red-btn">
           Starting at $199.99

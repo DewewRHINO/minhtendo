@@ -20,7 +20,7 @@ export const WebRoadmap = ({ viewportWidth }) => {
                   : setShownSection("ABOUT")
               }
             >
-              About Nintendo
+              About Minhtendo
               <FontAwesomeIcon
                 icon={faAngleDown}
                 className="d-block d-md-none collapse-icon"
@@ -97,12 +97,12 @@ export const WebRoadmap = ({ viewportWidth }) => {
               </li>
               <li>
                 <Link to="/" className="roadmap-link">
-                  Nintendo NY
+                  Minhtendo NY
                 </Link>
               </li>
               <li>
                 <Link to="/" className="roadmap-link">
-                  Nintendo Store
+                  Minhtendo Store
                 </Link>
               </li>
               <li>
@@ -150,12 +150,12 @@ export const WebRoadmap = ({ viewportWidth }) => {
               </li>
               <li>
                 <Link to="/" className="roadmap-link">
-                  Nintendo Switch
+                  Minhtendo Switch
                 </Link>
               </li>
               <li>
                 <Link to="/" className="roadmap-link">
-                  Nintendo 3DS
+                  Minhtendo 3DS
                 </Link>
               </li>
               <li>
@@ -165,7 +165,7 @@ export const WebRoadmap = ({ viewportWidth }) => {
               </li>
               <li>
                 <Link to="/" className="roadmap-link">
-                  Nintendo Product Recycling
+                  Minhtendo Product Recycling
                 </Link>
               </li>
             </ul>
